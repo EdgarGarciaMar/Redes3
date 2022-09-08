@@ -1,5 +1,5 @@
 import practica
-import sys
+
 class Menu:
     mib = "1.3.6.1.2.1."
     sistemaOperativo = "1.1.0"
@@ -22,8 +22,7 @@ class Menu:
     def agregarAgente(self):
 
         if comunidad and host != "":
-            file_path = 'Registro.txt'
-            sys.stdout = open(file_path, "w")
+
             print("".center(50,"#"))
             print(f"Operaciòn seleccionada : {self.opc}/ Agregar Agente")
             print(f'Comunidad : {self.comunidad}')
@@ -67,8 +66,7 @@ class Menu:
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP)
 
     def eliminarAgente(self):
-        pass
-
+        print("Eliminar")
 
     def generarPdf(self):
         pass
