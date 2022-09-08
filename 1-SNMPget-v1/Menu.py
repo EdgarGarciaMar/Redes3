@@ -41,13 +41,13 @@ class Menu:
             print("Sistema operativo".center(100, "-"))
             consulta = self.mib+self.sistemaOperativo
             practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
+            # nombre de dispositivo
+            print("Nombre de dispositivo".center(100, "-"))
+            consulta = self.mib + self.nombreDispositivo
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta, banderaInterfaces=0,versionSNMP=versionSNMP, puerto=puerto)
             #contacto
             print("Contacto".center(100, "-"))
             consulta = self.mib+self.contacto
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
-            #nombre de dispositivo
-            print("Nombre de dispositivo".center(100, "-"))
-            consulta = self.mib + self.nombreDispositivo
             practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
             #ubicacion
             print("Ubicacion".center(100, "-"))
@@ -57,9 +57,16 @@ class Menu:
             print("Numero de interfaces".center(100, "-"))
             consulta = self.mib + self.numeroInterfaces
             valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP,puerto=puerto)
+            # Descripcion de interfaces
+            print("Nombre de las Interfaces".center(100, "-"))
+            print("Datos de las interfaces:")
+            for i in range(1, valor):  # 2 interfaces
+                num = str(i)
+                consulta = self.mib + self.descripcionInterfaces + num
+                practica.funcion(comunidad=comunidad, host=host, consulta=consulta, banderaInterfaces=2,versionSNMP=versionSNMP, puerto=puerto)
             #monitoreo de interfaces
             #print(type(valor))
-            print("Monitoreo de interfaces".center(100,"-"))
+            print("Estado administrativo de las Interfaces".center(100,"-"))
             print("Lista de valores :")
             print("1--> up")
             print("2--> down")
@@ -73,13 +80,6 @@ class Menu:
                 consulta = self.mib+self.monitoreoInterfaces+num
                 print(f'-> {consulta}')
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP,puerto=puerto)
-            # Descripcion de interfaces
-            print("Descripcion de interfaces".center(100, "-"))
-            print("Datos de las interfaces")
-            for i in range(1,valor):  # 2 interfaces
-                num = str(i)
-                consulta = self.mib + self.descripcionInterfaces + num
-                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP,puerto=puerto)
             sys.stdout.close()
 
     def findFile(self,name,path):
@@ -168,9 +168,9 @@ if __name__ == "__main__":
         menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
         menu.eliminarAgente()
     elif opc == 3:
-        comunidad = ""#input("Ingresa la comunidad: ")
-        versionSNMP = 0#int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
-        puerto = 0#int(input("Ingresa el puerto (Ejemplo: 161): "))
+        comunidad = input("Ingresa la comunidad: ")
+        versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+        puerto = int(input("Ingresa el puerto (Ejemplo: 161): "))
         host = input("Ingresa el Host/IP : ")
         menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
         operacion = "Actualizar Agente"
