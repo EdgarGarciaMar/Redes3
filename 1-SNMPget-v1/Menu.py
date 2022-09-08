@@ -69,10 +69,11 @@ class Menu:
             print("5--> dormant")
             print("6--> notPresent")
             print("7--> lowerLayerDown")
+            print("".center(100, "/"))
             for i in range(1,valor): #2 interfaces
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num
-                print(f'-> {consulta}')
+                #print(f'-> {consulta}')
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP,puerto=puerto)
             print("".center(50,"#"))
             print(f"Operacion seleccionada : {self.opc}/ "+operacion)

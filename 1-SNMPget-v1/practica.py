@@ -15,7 +15,7 @@ Functionally similar to:
 
 """#
 from pysnmp.hlapi import *
-
+from constantes import *
 def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
     iterator = getCmd(
         SnmpEngine(),
@@ -35,6 +35,8 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
                             errorIndex and varBinds[int(errorIndex) - 1][0] or '?'))
 
     else:
+        numero = 0
+
         for varBind in varBinds:
             #print(varBind)
             num1 = str(varBind).split()
@@ -49,38 +51,54 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
                         #print(type(num1[2]))
                         num = int(num1[2])
                     #print(f'Numero: ')
-                    print(f'-> {num}')
+                    print(f'-> {num-1}')
                     return num
 
                 elif banderaInterfaces == 2: #bandera = 2 descripcion
                     if iterador == 1:
                         print(f'-> {x}')
+                        guardarInterfaces(str(x))
                     iterador+=1
                 elif banderaInterfaces == 3: #bandera = 3 monitoreo
-                    print("Monitoreo".center(50,"#"))
+                    #print("Monitoreo".center(50,"*"))
+                    #prueba()
                     num2 = int(num1[2])
 
                     if num2 == 1:
-                        print(f"-> up")
-                        #continue
+                        if numero==0:
+                            print(f"{inter()}-> up")
+
+                        numero+=1
                     elif num2 == 2:
-                        print("-> down")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> down")
+
+                        numero+=1
                     elif num2 == 3:
-                        print("-> testing")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> testing")
+
+                        numero+=1
                     elif num2 == 4:
-                        print("-> unknown")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> unknown")
+
+                        numero+=1
                     elif num2 == 5:
-                        print("-> dormant")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> dormant")
+
+                        numero+=1
                     elif num2 == 6:
-                        print("-> notPresent")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> notPresent")
+
+                        numero+=1
                     elif num2 == 7:
-                        print("-> lowerLayerDown")
-                        #continue
+                        if numero == 0:
+                            print(f"{inter()}-> lowerLayerDown")
+
+                        numero+=1
 
                 if banderaInterfaces == 0:
 

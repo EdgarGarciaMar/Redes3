@@ -1,26 +1,15 @@
 -----------------------------------------Sistema operativo------------------------------------------
-Hola desde sinbandera
-['SNMPv2-MIB::sysDescr.0', '=', 'Linux', 'edgar-Ubuntu', '5.15.0-47-generic', '#51-Ubuntu', 'SMP', 'Thu', 'Aug', '11', '07:51:15', 'UTC', '2022', 'x86_64']
--> Linux
+Linuxedgar-Ubuntu5.15.0-47-generic#51-UbuntuSMPThuAug1107:51:15UTC2022x86_64
 ---------------------------------------Nombre de dispositivo----------------------------------------
-Hola desde sinbandera
-['SNMPv2-MIB::sysName.0', '=', 'edgar-Ubuntu']
--> edgar-Ubuntu
+edgar-Ubuntu
 ----------------------------------------------Contacto----------------------------------------------
-Hola desde sinbandera
-['SNMPv2-MIB::sysContact.0', '=', 'edgargarcia.0129@gmail.com']
--> edgargarcia.0129@gmail.com
+edgargarcia.0129@gmail.com
 ---------------------------------------------Ubicacion----------------------------------------------
-Hola desde sinbandera
-['SNMPv2-MIB::sysLocation.0', '=', '"Laboratorio', 'Redes', 'ESCOM"']
--> "Laboratorio
+"LaboratorioRedesESCOM"
 ----------------------------------------Numero de interfaces----------------------------------------
--> 2
+-> 1
 --------------------------------------Nombre de las Interfaces--------------------------------------
 Datos de las interfaces:
-Hola desde descripcion
--> 1.3.6.1.2.1.2.2.1.2.1
-Hola desde descripcion
 -> lo
 ------------------------------Estado administrativo de las Interfaces-------------------------------
 Lista de valores :
@@ -31,11 +20,8 @@ Lista de valores :
 5--> dormant
 6--> notPresent
 7--> lowerLayerDown
--> 1.3.6.1.2.1.2.2.1.8.1
-Hola desde monitoreo
--> up
-Hola desde monitoreo
--> up
+////////////////////////////////////////////////////////////////////////////////////////////////////
+lo-> up
 ##################################################
 Operacion seleccionada : 1/ Agregar Agente
 Comunidad : comunidadASR
