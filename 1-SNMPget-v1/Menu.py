@@ -1,5 +1,5 @@
 import practica
-
+import sys
 class Menu:
     mib = "1.3.6.1.2.1."
     sistemaOperativo = "1.1.0"
@@ -10,57 +10,61 @@ class Menu:
     monitoreoInterfaces = "2.2.1.8." #+ numero de interfaces en un range en for
     descripcionInterfaces = "2.2.1.2."#+ numero de interfaces en un range en un for
 
-    def __init__(self, opc):
-        self._opc = opc
+    def __init__(self, opc,comunidad,host,versionSNMP):
+        self.opc = opc
+        self.comunidad = comunidad
+        self.host = host
+        self.versionSNMP = versionSNMP
 
     def __str__(self):
         return f'Clase de Menu practica 1'
 
-    def agregarAgente(self): #1.3.6.1.2.1.1.1.0
-        print(f"{self._opc}: Agregar agente")
-        comunidad = input("Ingresa la comunidad: ")
-        host = input("Ingresa el Host: ")
-        #for a in range(1,7):
-            #num = str(a)
-            ##print(self.mib+"1."+num)
-            #consulta = self.mib+"1."+num+".0"
-        ##consulta = input("Ingresa la consulta: ")
-            #practica.funcion(comunidad=comunidad, host= host,consulta= consulta)
+    def agregarAgente(self):
+
         if comunidad and host != "":
+            file_path = 'Registro.txt'
+            sys.stdout = open(file_path, "w")
+            print("".center(50,"#"))
+            print(f"Operaciòn seleccionada : {self.opc}/ Agregar Agente")
+            print(f'Comunidad : {self.comunidad}')
+            print(f'Versiòn de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
+            print(f'Host/IP : {self.host}')
+            print("".center(50, "#"))
             #sistema operativo
             print("Sistema operativo".center(100, "-"))
             consulta = self.mib+self.sistemaOperativo
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #contacto
             print("Contacto".center(100, "-"))
             consulta = self.mib+self.contacto
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #nombre de dispositivo
             print("Nombre de dispositivo".center(100, "-"))
             consulta = self.mib + self.nombreDispositivo
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #ubicacion
-            print("Ubicacion".center(100, "-"))
+            print("Ubicaciòn".center(100, "-"))
             consulta = self.mib + self.ubicacion
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #numero de interfaces
-            print("Numero de interfaces".center(100, "-"))
+            print("Nùmero de interfaces".center(100, "-"))
             consulta = self.mib + self.numeroInterfaces
-            valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1)
+            valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP)
             #monitoreo de interfaces
-            #valor += 1
-            print(valor)
+            #print(type(valor))
             print("Monitoreo de interfaces".center(100,"-"))
-            for i in range(1,2): #2 interfaces
+            for i in range(1,valor): #2 interfaces
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num
-                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+                print(f'-> {consulta}')
+                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP)
             # Descripcion de interfaces
-            print("Descripcion de interfaces".center(100, "-"))
-            for i in range(1,2):  # 2 interfaces
+            print("Descripciòn de interfaces".center(100, "-"))
+            print("Datos de las interfaces")
+            for i in range(1,valor):  # 2 interfaces
                 num = str(i)
                 consulta = self.mib + self.descripcionInterfaces + num
-                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0)
+                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP)
 
     def eliminarAgente(self):
         pass
@@ -76,28 +80,29 @@ class Menu:
 
 
 if __name__ == "__main__":
-    print(f'Peticiones Get de SNMP'.center(50, "-"))
+    print(f'Sistema de Administraciòn de Red'.center(50, "-"))
+    print(f'Pràctica 1 -Adquisiciòn de informaciòn'.center(50, "-"))
     print("Selecciona una de las siguientes opciones: ")
     print("1: Agregar Agente")
     print("2: Eliminar Agente")
-    print("3: Generar PDF")
-    print("4: Actualizar")
-    print("5: Salir")
+    print("3: Actualizar")
+    print("4: Salir")
 
-    opc = int(input("Ingresa la opcion: "))
-    menu = Menu(opc = opc)
+    opc = int(input("Ingresa la opciòn: "))
+    comunidad = input("Ingresa la comunidad: ")
+    versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+    host = input("Ingresa el Host: ")
+    menu = Menu(opc = opc,comunidad= comunidad, host= host,versionSNMP= versionSNMP)
     if opc == 1:
         menu.agregarAgente()
     elif opc == 2:
         menu.eliminarAgente()
     elif opc == 3:
-        menu.generarPdf()
-    elif opc == 4:
         menu.actualizar()
-    elif opc == 5:
+    elif opc == 4:
         quit()
     else:
-        print(f'La opcion {opc} no es correcta, seleccione de nuevo.')
+        print(f'La opciòn {opc} no es correcta, seleccione de nuevo.')
         quit()
 
 

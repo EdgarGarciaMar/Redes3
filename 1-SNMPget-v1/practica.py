@@ -16,10 +16,10 @@ Functionally similar to:
 """#
 from pysnmp.hlapi import *
 
-def funcion(comunidad,host,consulta,banderaInterfaces):
+def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP):
     iterator = getCmd(
         SnmpEngine(),
-        CommunityData(comunidad, mpModel=0), #comunidadASR
+        CommunityData(comunidad, mpModel=versionSNMP), #comunidadASR
         UdpTransportTarget((host, 161)),
         ContextData(),
         ObjectType(ObjectIdentity(consulta)) #1.3.6.1.2.1.1.1.0
@@ -36,13 +36,38 @@ def funcion(comunidad,host,consulta,banderaInterfaces):
 
     else:
         for varBind in varBinds:
+            #print(varBind)
+            num1 = str(varBind).split()
+            longitud = len(num1)
             for x in varBind:
                 if banderaInterfaces == 1: #bandera = 1 numero de interfaces
-                    num = int(x)
+                    if longitud == 3:
+                        #print(f'pos: {num1[2]}')
+                        #print(type(num1[2]))
+                        num = int(num1[2])
                     print(f'-> {x}')
+                    print(f'-> {num}')
                     return num
 
                 elif banderaInterfaces == 2: #bandera = 2 descripcion
-                    print("Datos de las interfaces")
                     print(f'-> {x}')
+                elif banderaInterfaces == 3: #bandera = 3 monitoreo
+                    #print(f'-> {x}')
+                    #print(f'pos: {num1[2]}')
+                    num2 = int(num1[2])
+                    #print(f'num: {num2}')
+                    if num2 == 1:
+                        print("-> up")
+                        continue
+                    elif num2 == 2:
+                        print("-> down")
+                        continue
+                    elif num2 == 3:
+                        print("-> testing")
+                        continue
+                    elif num2 == 4:
+                        print("-> unknown")
+                        continue
+
+                print(f'-> {x}')
             #print(' = '.join([x.prettyPrint() for x in varBind]))
