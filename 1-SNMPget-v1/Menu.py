@@ -4,6 +4,7 @@ import sys
 import os
 from os import remove
 from Fpdf import *
+import mmap
 
 class Menu:
     mib = "1.3.6.1.2.1."
@@ -106,17 +107,26 @@ class Menu:
 
     def generarPdf(self):
         name = self.host
+        titulo = "A.S.R.-Practica 1-Edgar Garcia Marciano-2020630175"
         pdf = Fpdf()
         pdf.add_page()
+        with open('localhost.txt') as f:
+            s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+            if s.find(b'Windows') != -1:
+                pdf.logo("windows.jpg",70,30,60,40)
+            if s.find(b'Linux') != -1:
+                pdf.logo("linux.jpg",70,30,60,40)
+            if s.find(b'Mac') != -1:
+                pdf.logo("mac.png",70,30,60,40)
         pdf.logo("imagen.jpg",0,0,60,20)
-        pdf.titles(name)
+        pdf.titles(titulo)
         pdf.texts(name)
         pdf.set_author("Gestor de SNMP")
         pdf1 = name + ".pdf"
         pdf.output(pdf1)
 
-    def actualizar(self):
-        operacion = "Actualizar Agente"
+    def actualizar(self,operacion):
+
         print(f"Operaciòn seleccionada : {self.opc}/ "+operacion)
         filePath = self.findFile(self.host + ".txt", "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1")
 
@@ -140,19 +150,31 @@ if __name__ == "__main__":
     print("4: Salir")
 
     opc = int(input("Ingresa la opciòn: "))
-    comunidad = input("Ingresa la comunidad: ")
-    versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
-    puerto = int(input("Ingresa el puerto (Ejemplo: 161): "))
-    host = input("Ingresa el Host: ")
-    menu = Menu(opc = opc,comunidad= comunidad, host= host,versionSNMP= versionSNMP,puerto=puerto)
+
     if opc == 1:
+        comunidad = input("Ingresa la comunidad: ")
+        versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+        puerto = int(input("Ingresa el puerto (Ejemplo: 161): "))
+        host = input("Ingresa el Host: ")
+        menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
         operacion = "Agregar Agente"
         menu.agregarAgente(operacion= operacion)
         menu.generarPdf()
     elif opc == 2:
+        comunidad = ""#input("Ingresa la comunidad: ")
+        versionSNMP = 0#int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+        puerto = 0#int(input("Ingresa el puerto (Ejemplo: 161): "))
+        host = input("Ingresa el Host/IP : ")
+        menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
         menu.eliminarAgente()
     elif opc == 3:
-        menu.actualizar()
+        comunidad = ""#input("Ingresa la comunidad: ")
+        versionSNMP = 0#int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+        puerto = 0#int(input("Ingresa el puerto (Ejemplo: 161): "))
+        host = input("Ingresa el Host/IP : ")
+        menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
+        operacion = "Actualizar Agente"
+        menu.actualizar(operacion=operacion)
     elif opc == 4:
         quit()
     else:
