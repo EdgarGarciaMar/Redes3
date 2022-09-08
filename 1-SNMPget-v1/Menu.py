@@ -1,5 +1,9 @@
 import practica
 
+import sys
+import os
+from os import remove
+
 class Menu:
     mib = "1.3.6.1.2.1."
     sistemaOperativo = "1.1.0"
@@ -22,7 +26,8 @@ class Menu:
     def agregarAgente(self):
 
         if comunidad and host != "":
-
+            file_path = self.host+'.txt'
+            sys.stdout = open(file_path, "w")
             print("".center(50,"#"))
             print(f"Operaciòn seleccionada : {self.opc}/ Agregar Agente")
             print(f'Comunidad : {self.comunidad}')
@@ -65,8 +70,28 @@ class Menu:
                 consulta = self.mib + self.descripcionInterfaces + num
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP)
 
+
+    def findFile(self,name,path):
+        for dirpath, dirname, filename in os.walk(path):
+            if name in filename:
+                return os.path.join(dirpath, name)
+
+
     def eliminarAgente(self):
-        print("Eliminar")
+        print(f"Operaciòn seleccionada : {self.opc}/ Eliminar Agente")
+        filePath = self.findFile(self.host+".txt","/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1")
+
+        if filePath == None:
+            print("Archivo no encontrado".center(50,"-"))
+        else:
+            #print(filePath)
+            fichero = open(self.host+".txt",'r')
+            print(fichero.read())
+            x = input("¿Seguro deseas eliminar el registro? [y/n]: ")
+            if x == "y":
+                remove('/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/'+self.host+'.txt')
+            else:
+                print("Archivo no borrado.".center(50,"#"))
 
     def generarPdf(self):
         pass
