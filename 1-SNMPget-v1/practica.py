@@ -39,44 +39,56 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
             #print(varBind)
             num1 = str(varBind).split()
             longitud = len(num1)
+            iterador =0
             for x in varBind:
                 if banderaInterfaces == 1: #bandera = 1 numero de interfaces
+                    #print("Hola desde numero int")
                     if longitud == 3:
+                        #print("Hola desde numero int interior")
                         #print(f'pos: {num1[2]}')
                         #print(type(num1[2]))
                         num = int(num1[2])
-                    print(f'-> {x}')
+                    #print(f'Numero: ')
                     print(f'-> {num}')
                     return num
 
                 elif banderaInterfaces == 2: #bandera = 2 descripcion
-                    print(f'-> {x}')
+                    if iterador == 1:
+                        print(f'-> {x}')
+                    iterador+=1
                 elif banderaInterfaces == 3: #bandera = 3 monitoreo
-                    #print(f'-> {x}')
-                    #print(f'pos: {num1[2]}')
+                    print("Monitoreo".center(50,"#"))
                     num2 = int(num1[2])
-                    #print(f'num: {num2}')
+
                     if num2 == 1:
-                        print("-> up")
-                        continue
+                        print(f"-> up")
+                        #continue
                     elif num2 == 2:
                         print("-> down")
-                        continue
+                        #continue
                     elif num2 == 3:
                         print("-> testing")
-                        continue
+                        #continue
                     elif num2 == 4:
                         print("-> unknown")
-                        continue
+                        #continue
                     elif num2 == 5:
                         print("-> dormant")
-                        continue
+                        #continue
                     elif num2 == 6:
                         print("-> notPresent")
-                        continue
+                        #continue
                     elif num2 == 7:
                         print("-> lowerLayerDown")
-                        continue
+                        #continue
 
-                print(f'-> {x}')
+                if banderaInterfaces == 0:
+
+                    datos = len(num1)
+                    listaDatos = list()
+
+                    for d in range(2,datos):
+                        listaDatos.append(num1[d])
+                    print("".join(listaDatos))
+                    return
             #print(' = '.join([x.prettyPrint() for x in varBind]))

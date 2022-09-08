@@ -1,29 +1,26 @@
-##################################################
-Operacion seleccionada : 1/ Agregar Agente
-Comunidad : comunidadASR
-Version de SNMP (0-v1, 1-v2) : 0
-Host/IP : localhost
-##################################################
 -----------------------------------------Sistema operativo------------------------------------------
--> 1.3.6.1.2.1.1.1.0
--> Linux edgar-Ubuntu 5.15.0-47-generic #51-Ubuntu SMP Thu Aug 11 07:51:15 UTC 2022 x86_64
+Hola desde sinbandera
+['SNMPv2-MIB::sysDescr.0', '=', 'Linux', 'edgar-Ubuntu', '5.15.0-47-generic', '#51-Ubuntu', 'SMP', 'Thu', 'Aug', '11', '07:51:15', 'UTC', '2022', 'x86_64']
+-> Linux
 ---------------------------------------Nombre de dispositivo----------------------------------------
--> 1.3.6.1.2.1.1.5.0
+Hola desde sinbandera
+['SNMPv2-MIB::sysName.0', '=', 'edgar-Ubuntu']
 -> edgar-Ubuntu
 ----------------------------------------------Contacto----------------------------------------------
--> 1.3.6.1.2.1.1.4.0
+Hola desde sinbandera
+['SNMPv2-MIB::sysContact.0', '=', 'edgargarcia.0129@gmail.com']
 -> edgargarcia.0129@gmail.com
 ---------------------------------------------Ubicacion----------------------------------------------
--> 1.3.6.1.2.1.1.6.0
--> "Laboratorio Redes ESCOM"
+Hola desde sinbandera
+['SNMPv2-MIB::sysLocation.0', '=', '"Laboratorio', 'Redes', 'ESCOM"']
+-> "Laboratorio
 ----------------------------------------Numero de interfaces----------------------------------------
--> 1.3.6.1.2.1.2.1.0
 -> 2
 --------------------------------------Nombre de las Interfaces--------------------------------------
 Datos de las interfaces:
+Hola desde descripcion
 -> 1.3.6.1.2.1.2.2.1.2.1
--> 1.3.6.1.2.1.2.2.1.2.1
--> lo
+Hola desde descripcion
 -> lo
 ------------------------------Estado administrativo de las Interfaces-------------------------------
 Lista de valores :
@@ -35,5 +32,13 @@ Lista de valores :
 6--> notPresent
 7--> lowerLayerDown
 -> 1.3.6.1.2.1.2.2.1.8.1
+Hola desde monitoreo
 -> up
+Hola desde monitoreo
 -> up
+##################################################
+Operacion seleccionada : 1/ Agregar Agente
+Comunidad : comunidadASR
+Version de SNMP (0-v1, 1-v2) : 0
+Host/IP : localhost
+##################################################

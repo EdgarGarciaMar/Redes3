@@ -31,12 +31,6 @@ class Menu:
         if comunidad and host != "":
             file_path = self.host+'.txt'
             sys.stdout = open(file_path, "w")
-            print("".center(50,"#"))
-            print(f"Operacion seleccionada : {self.opc}/ "+operacion)
-            print(f'Comunidad : {self.comunidad}')
-            print(f'Version de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
-            print(f'Host/IP : {self.host}')
-            print("".center(50, "#"))
             #sistema operativo
             print("Sistema operativo".center(100, "-"))
             consulta = self.mib+self.sistemaOperativo
@@ -80,6 +74,12 @@ class Menu:
                 consulta = self.mib+self.monitoreoInterfaces+num
                 print(f'-> {consulta}')
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP,puerto=puerto)
+            print("".center(50,"#"))
+            print(f"Operacion seleccionada : {self.opc}/ "+operacion)
+            print(f'Comunidad : {self.comunidad}')
+            print(f'Version de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
+            print(f'Host/IP : {self.host}')
+            print("".center(50, "#"))
             sys.stdout.close()
 
     def findFile(self,name,path):
@@ -110,7 +110,7 @@ class Menu:
         titulo = "A.S.R.-Practica 1-Edgar Garcia Marciano-2020630175"
         pdf = Fpdf()
         pdf.add_page()
-        with open('localhost.txt') as f:
+        with open(self.host+'.txt') as f:
             s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
             if s.find(b'Windows') != -1:
                 pdf.logo("windows.jpg",70,30,60,40)
