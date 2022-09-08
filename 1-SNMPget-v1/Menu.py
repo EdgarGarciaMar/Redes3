@@ -104,6 +104,7 @@ class Menu:
         name = self.host
         pdf = Fpdf()
         pdf.add_page()
+        pdf.logo("imagen.jpg",0,0,60,20)
         pdf.titles(name)
         pdf.texts(name)
         pdf.set_author("Gestor de SNMP")
