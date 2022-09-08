@@ -3,6 +3,7 @@ import practica
 import sys
 import os
 from os import remove
+from Fpdf import *
 
 class Menu:
     mib = "1.3.6.1.2.1."
@@ -23,15 +24,15 @@ class Menu:
     def __str__(self):
         return f'Clase de Menu practica 1'
 
-    def agregarAgente(self):
+    def agregarAgente(self,operacion):
 
         if comunidad and host != "":
             file_path = self.host+'.txt'
             sys.stdout = open(file_path, "w")
             print("".center(50,"#"))
-            print(f"Operaciòn seleccionada : {self.opc}/ Agregar Agente")
+            print(f"Operacion seleccionada : {self.opc}/ "+operacion)
             print(f'Comunidad : {self.comunidad}')
-            print(f'Versiòn de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
+            print(f'Version de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
             print(f'Host/IP : {self.host}')
             print("".center(50, "#"))
             #sistema operativo
@@ -47,29 +48,34 @@ class Menu:
             consulta = self.mib + self.nombreDispositivo
             practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #ubicacion
-            print("Ubicaciòn".center(100, "-"))
+            print("Ubicacion".center(100, "-"))
             consulta = self.mib + self.ubicacion
             practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
             #numero de interfaces
-            print("Nùmero de interfaces".center(100, "-"))
+            print("Numero de interfaces".center(100, "-"))
             consulta = self.mib + self.numeroInterfaces
             valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP)
             #monitoreo de interfaces
             #print(type(valor))
             print("Monitoreo de interfaces".center(100,"-"))
+            print("Lista de valores :")
+            print("1--> up")
+            print("2--> down")
+            print("3--> testing")
+            print("4--> unknown")
             for i in range(1,valor): #2 interfaces
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num
                 print(f'-> {consulta}')
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP)
             # Descripcion de interfaces
-            print("Descripciòn de interfaces".center(100, "-"))
+            print("Descripcion de interfaces".center(100, "-"))
             print("Datos de las interfaces")
             for i in range(1,valor):  # 2 interfaces
                 num = str(i)
                 consulta = self.mib + self.descripcionInterfaces + num
                 practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP)
-
+            sys.stdout.close()
 
     def findFile(self,name,path):
         for dirpath, dirname, filename in os.walk(path):
@@ -90,14 +96,30 @@ class Menu:
             x = input("¿Seguro deseas eliminar el registro? [y/n]: ")
             if x == "y":
                 remove('/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/'+self.host+'.txt')
+                remove('/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/' + self.host + '.pdf')
             else:
                 print("Archivo no borrado.".center(50,"#"))
 
     def generarPdf(self):
-        pass
+        name = self.host
+        pdf = Fpdf()
+        pdf.add_page()
+        pdf.titles(name)
+        pdf.texts(name)
+        pdf.set_author("Gestor de SNMP")
+        pdf1 = name + ".pdf"
+        pdf.output(pdf1)
 
     def actualizar(self):
-        pass
+        operacion = "Actualizar Agente"
+        print(f"Operaciòn seleccionada : {self.opc}/ "+operacion)
+        filePath = self.findFile(self.host + ".txt", "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1")
+
+        if filePath == None:
+            print("Archivo no encontrado".center(50, "-"))
+        else:
+            self.agregarAgente(operacion=operacion)
+            self.generarPdf()
 
 
 
@@ -117,7 +139,9 @@ if __name__ == "__main__":
     host = input("Ingresa el Host: ")
     menu = Menu(opc = opc,comunidad= comunidad, host= host,versionSNMP= versionSNMP)
     if opc == 1:
-        menu.agregarAgente()
+        operacion = "Agregar Agente"
+        menu.agregarAgente(operacion= operacion)
+        menu.generarPdf()
     elif opc == 2:
         menu.eliminarAgente()
     elif opc == 3:
