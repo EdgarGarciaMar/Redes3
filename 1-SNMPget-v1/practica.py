@@ -68,6 +68,15 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP):
                     elif num2 == 4:
                         print("-> unknown")
                         continue
+                    elif num2 == 5:
+                        print("-> dormant")
+                        continue
+                    elif num2 == 6:
+                        print("-> notPresent")
+                        continue
+                    elif num2 == 7:
+                        print("-> lowerLayerDown")
+                        continue
 
                 print(f'-> {x}')
             #print(' = '.join([x.prettyPrint() for x in varBind]))

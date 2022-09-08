@@ -63,6 +63,9 @@ class Menu:
             print("2--> down")
             print("3--> testing")
             print("4--> unknown")
+            print("5--> dormant")
+            print("6--> notPresent")
+            print("7--> lowerLayerDown")
             for i in range(1,valor): #2 interfaces
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num
