@@ -52,8 +52,6 @@ class Menu:
             consulta = self.mib + self.numeroInterfaces
             valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP,puerto=puerto)
             # Descripcion de interfaces
-            print("Nombre de las Interfaces".center(100, "-"))
-            print("Datos de las interfaces:")
             for i in range(1, valor):  # 2 interfaces
                 num = str(i)
                 consulta = self.mib + self.descripcionInterfaces + num
@@ -70,6 +68,7 @@ class Menu:
             print("6--> notPresent")
             print("7--> lowerLayerDown")
             print("".center(100, "/"))
+            print("Nombre ---> Estado")
             for i in range(1,valor): #2 interfaces
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num

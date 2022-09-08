@@ -45,18 +45,15 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
             for x in varBind:
                 if banderaInterfaces == 1: #bandera = 1 numero de interfaces
                     #print("Hola desde numero int")
+                    num = 0
                     if longitud == 3:
-                        #print("Hola desde numero int interior")
-                        #print(f'pos: {num1[2]}')
-                        #print(type(num1[2]))
                         num = int(num1[2])
-                    #print(f'Numero: ')
                     print(f'-> {num-1}')
                     return num
 
                 elif banderaInterfaces == 2: #bandera = 2 descripcion
                     if iterador == 1:
-                        print(f'-> {x}')
+                        #print(f'-> {x}')
                         guardarInterfaces(str(x))
                     iterador+=1
                 elif banderaInterfaces == 3: #bandera = 3 monitoreo
@@ -107,6 +104,6 @@ def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
 
                     for d in range(2,datos):
                         listaDatos.append(num1[d])
-                    print("".join(listaDatos))
+                    print("-".join(listaDatos))
                     return
             #print(' = '.join([x.prettyPrint() for x in varBind]))

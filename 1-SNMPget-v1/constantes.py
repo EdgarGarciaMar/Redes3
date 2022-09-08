@@ -12,5 +12,3 @@ def inter():
     listaInterfaz.pop(i)
     return val
 
-def prueba():
-    print(listaInterfaz)

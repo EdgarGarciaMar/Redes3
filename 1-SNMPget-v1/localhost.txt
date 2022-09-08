@@ -1,16 +1,13 @@
 -----------------------------------------Sistema operativo------------------------------------------
-Linuxedgar-Ubuntu5.15.0-47-generic#51-UbuntuSMPThuAug1107:51:15UTC2022x86_64
+Linux-edgar-Ubuntu-5.15.0-47-generic-#51-Ubuntu-SMP-Thu-Aug-11-07:51:15-UTC-2022-x86_64
 ---------------------------------------Nombre de dispositivo----------------------------------------
 edgar-Ubuntu
 ----------------------------------------------Contacto----------------------------------------------
 edgargarcia.0129@gmail.com
 ---------------------------------------------Ubicacion----------------------------------------------
-"LaboratorioRedesESCOM"
+"Laboratorio-Redes-ESCOM"
 ----------------------------------------Numero de interfaces----------------------------------------
 -> 1
---------------------------------------Nombre de las Interfaces--------------------------------------
-Datos de las interfaces:
--> lo
 ------------------------------Estado administrativo de las Interfaces-------------------------------
 Lista de valores :
 1--> up
@@ -21,10 +18,11 @@ Lista de valores :
 6--> notPresent
 7--> lowerLayerDown
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+Nombre ---> Estado
 lo-> up
 ##################################################
 Operacion seleccionada : 1/ Agregar Agente
 Comunidad : comunidadASR
-Version de SNMP (0-v1, 1-v2) : 0
+Version de SNMP (0-v1, 1-v2) : 1
 Host/IP : localhost
 ##################################################
