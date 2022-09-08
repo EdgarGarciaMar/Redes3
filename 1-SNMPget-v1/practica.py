@@ -16,11 +16,11 @@ Functionally similar to:
 """#
 from pysnmp.hlapi import *
 
-def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP):
+def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
     iterator = getCmd(
         SnmpEngine(),
         CommunityData(comunidad, mpModel=versionSNMP), #comunidadASR
-        UdpTransportTarget((host, 161)),
+        UdpTransportTarget((host, puerto)),#puerto 161
         ContextData(),
         ObjectType(ObjectIdentity(consulta)) #1.3.6.1.2.1.1.1.0
     )

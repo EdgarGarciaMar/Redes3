@@ -15,11 +15,12 @@ class Menu:
     monitoreoInterfaces = "2.2.1.8." #+ numero de interfaces en un range en for
     descripcionInterfaces = "2.2.1.2."#+ numero de interfaces en un range en un for
 
-    def __init__(self, opc,comunidad,host,versionSNMP):
+    def __init__(self, opc,comunidad,host,versionSNMP,puerto):
         self.opc = opc
         self.comunidad = comunidad
         self.host = host
         self.versionSNMP = versionSNMP
+        self.puerto = puerto
 
     def __str__(self):
         return f'Clase de Menu practica 1'
@@ -38,23 +39,23 @@ class Menu:
             #sistema operativo
             print("Sistema operativo".center(100, "-"))
             consulta = self.mib+self.sistemaOperativo
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
             #contacto
             print("Contacto".center(100, "-"))
             consulta = self.mib+self.contacto
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
             #nombre de dispositivo
             print("Nombre de dispositivo".center(100, "-"))
             consulta = self.mib + self.nombreDispositivo
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
             #ubicacion
             print("Ubicacion".center(100, "-"))
             consulta = self.mib + self.ubicacion
-            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP)
+            practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=0,versionSNMP=versionSNMP,puerto=puerto)
             #numero de interfaces
             print("Numero de interfaces".center(100, "-"))
             consulta = self.mib + self.numeroInterfaces
-            valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP)
+            valor = practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=1,versionSNMP=versionSNMP,puerto=puerto)
             #monitoreo de interfaces
             #print(type(valor))
             print("Monitoreo de interfaces".center(100,"-"))
@@ -70,14 +71,14 @@ class Menu:
                 num = str(i)
                 consulta = self.mib+self.monitoreoInterfaces+num
                 print(f'-> {consulta}')
-                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP)
+                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=3,versionSNMP=versionSNMP,puerto=puerto)
             # Descripcion de interfaces
             print("Descripcion de interfaces".center(100, "-"))
             print("Datos de las interfaces")
             for i in range(1,valor):  # 2 interfaces
                 num = str(i)
                 consulta = self.mib + self.descripcionInterfaces + num
-                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP)
+                practica.funcion(comunidad=comunidad, host=host, consulta=consulta,banderaInterfaces=2,versionSNMP=versionSNMP,puerto=puerto)
             sys.stdout.close()
 
     def findFile(self,name,path):
@@ -131,6 +132,7 @@ class Menu:
 if __name__ == "__main__":
     print(f'Sistema de Administraciòn de Red'.center(50, "-"))
     print(f'Pràctica 1 -Adquisiciòn de informaciòn'.center(50, "-"))
+    print(f'Edgar Garcìa Marciano 2020630175'.center(50, "-"))
     print("Selecciona una de las siguientes opciones: ")
     print("1: Agregar Agente")
     print("2: Eliminar Agente")
@@ -140,8 +142,9 @@ if __name__ == "__main__":
     opc = int(input("Ingresa la opciòn: "))
     comunidad = input("Ingresa la comunidad: ")
     versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
+    puerto = int(input("Ingresa el puerto (Ejemplo: 161): "))
     host = input("Ingresa el Host: ")
-    menu = Menu(opc = opc,comunidad= comunidad, host= host,versionSNMP= versionSNMP)
+    menu = Menu(opc = opc,comunidad= comunidad, host= host,versionSNMP= versionSNMP,puerto=puerto)
     if opc == 1:
         operacion = "Agregar Agente"
         menu.agregarAgente(operacion= operacion)
