@@ -12,3 +12,7 @@ def inter():
     listaInterfaz.pop(i)
     return val
 
+def verPdfs(pdf):
+    f = open('PDFS.txt', 'a')
+    f.write(pdf+"\r\n")
+    f.close()

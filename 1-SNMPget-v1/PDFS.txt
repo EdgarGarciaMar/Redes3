@@ -1,0 +1,2 @@
+/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/192.168.0.20.pdf
+/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/localhost.pdf

@@ -6,6 +6,7 @@ from os import remove
 from Fpdf import *
 import mmap
 import webbrowser
+from  constantes import *
 
 class Menu:
     mib = "1.3.6.1.2.1."
@@ -81,8 +82,10 @@ class Menu:
             print(f'Version de SNMP (0-v1, 1-v2) : {self.versionSNMP}')
             print(f'Host/IP : {self.host}')
             print("".center(50, "#"))
+            print("Administrador SNMP".center(100, "*"))
             sys.stdout.close()
             path = "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/"+self.host+'.pdf'
+            verPdfs(path)
             webbrowser.open_new(path)
     def findFile(self,name,path):
         for dirpath, dirname, filename in os.walk(path):
@@ -149,8 +152,8 @@ if __name__ == "__main__":
     print("1: Agregar Agente")
     print("2: Eliminar Agente")
     print("3: Actualizar")
-    print("4: Salir")
-    print("5: Ver todos los pdfs")
+    print("4: Ver todos los pdfs")
+    print("5: Salir")
 
     opc = int(input("Ingresa la opciòn: "))
 
@@ -179,9 +182,12 @@ if __name__ == "__main__":
         operacion = "Actualizar Agente"
         menu.actualizar(operacion=operacion)
     elif opc == 4:
-        quit()
+        f = open('PDFS.txt', 'r')
+        for path in f:
+            webbrowser.open_new(path)
+        f.close()
     elif opc == 5:
-        pass
+        quit()
     else:
         print(f'La opciòn {opc} no es correcta, seleccione de nuevo.')
         quit()
