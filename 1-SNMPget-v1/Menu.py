@@ -5,6 +5,7 @@ import os
 from os import remove
 from Fpdf import *
 import mmap
+import webbrowser
 
 class Menu:
     mib = "1.3.6.1.2.1."
@@ -81,7 +82,8 @@ class Menu:
             print(f'Host/IP : {self.host}')
             print("".center(50, "#"))
             sys.stdout.close()
-
+            path = "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/"+self.host+'.pdf'
+            webbrowser.open_new(path)
     def findFile(self,name,path):
         for dirpath, dirname, filename in os.walk(path):
             if name in filename:
@@ -148,6 +150,7 @@ if __name__ == "__main__":
     print("2: Eliminar Agente")
     print("3: Actualizar")
     print("4: Salir")
+    print("5: Ver todos los pdfs")
 
     opc = int(input("Ingresa la opciòn: "))
 
@@ -177,6 +180,8 @@ if __name__ == "__main__":
         menu.actualizar(operacion=operacion)
     elif opc == 4:
         quit()
+    elif opc == 5:
+        pass
     else:
         print(f'La opciòn {opc} no es correcta, seleccione de nuevo.')
         quit()
