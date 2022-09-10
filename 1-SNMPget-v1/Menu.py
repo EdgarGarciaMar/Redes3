@@ -84,9 +84,6 @@ class Menu:
             print("".center(50, "#"))
             print("Administrador SNMP".center(100, "*"))
             sys.stdout.close()
-            path = "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/"+self.host+'.pdf'
-            verPdfs(path)
-            webbrowser.open_new(path)
     def findFile(self,name,path):
         for dirpath, dirname, filename in os.walk(path):
             if name in filename:
@@ -105,8 +102,26 @@ class Menu:
             print(fichero.read())
             x = input("¿Seguro deseas eliminar el registro? [y/n]: ")
             if x == "y":
+                busca = '/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/' +self.host+'.pdf'
                 remove('/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/'+self.host+'.txt')
-                remove('/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/' + self.host + '.pdf')
+                remove(busca)
+                f = open('PDFS.txt', 'r')
+                pdf = f.readlines()
+                f.close()
+                i = 0
+                #print(pdf)
+                for p in pdf:
+                    if p == busca+"\n":
+                        #print("Encontrado")
+                        pdf.pop(i)
+                    i+=1
+                #print("Despues de encontrarlo")
+                #print(pdf)
+                f1 = open('PDFS.txt', 'w')
+                for i in pdf:
+                    f1.write(i+"\n")
+                f1.close()
+
             else:
                 print("Archivo no borrado.".center(50,"#"))
 
@@ -129,6 +144,12 @@ class Menu:
         pdf.set_author("Gestor de SNMP")
         pdf1 = name + ".pdf"
         pdf.output(pdf1)
+        path = "/home/edgar/Documents/GitHub/Redes3/1-SNMPget-v1/" + self.host + '.pdf'
+        if self.opc == 1:
+            verPdfs(path)
+            webbrowser.open_new(path)
+        elif self.opc == 3:
+            webbrowser.open_new(path)
 
     def actualizar(self,operacion):
 
@@ -161,7 +182,7 @@ if __name__ == "__main__":
         comunidad = input("Ingresa la comunidad: ")
         versionSNMP = int(input("Ingresa la version de snmp (0-v1, 1-v2): "))
         puerto = int(input("Ingresa el puerto (Ejemplo: 161): "))
-        host = input("Ingresa el Host: ")
+        host = input("Ingresa el Host/IP: ")
         menu = Menu(opc=opc, comunidad=comunidad, host=host, versionSNMP=versionSNMP, puerto=puerto)
         operacion = "Agregar Agente"
         menu.agregarAgente(operacion= operacion)
@@ -182,9 +203,11 @@ if __name__ == "__main__":
         operacion = "Actualizar Agente"
         menu.actualizar(operacion=operacion)
     elif opc == 4:
+        print(f"Operaciòn seleccionada : {opc}/ Ver PDF's")
         f = open('PDFS.txt', 'r')
         for path in f:
-            webbrowser.open_new(path)
+            if path != "\n":
+                webbrowser.open_new(path)
         f.close()
     elif opc == 5:
         quit()
