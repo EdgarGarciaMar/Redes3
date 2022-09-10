@@ -1,3 +1,6 @@
+#! /usr/bin/env python3
+# chmod +x ./nombre_archivo.py
+#/usr/bin/env python3 <- nombre del interprete de python
 import practica
 
 import sys
