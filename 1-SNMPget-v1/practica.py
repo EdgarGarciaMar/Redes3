@@ -13,9 +13,15 @@ Functionally similar to:
 
 | $ snmpget -v1 -c comunidadASR localhost 1.3.6.1.2.1.1.1.0
 
-"""#
+"""
+#Imports para el funcionamiento del script
 from pysnmp.hlapi import *
 from constantes import *
+""""
+Funcion es mandada a llamar por la clase Menu, esta funciòn recibe los parametros
+para hacer las operaciones SNMP, retorna los valores de la consulta ingresada con
+un formato para que sea legible para una persona y con un orden determinado.
+"""
 def funcion(comunidad,host,consulta,banderaInterfaces,versionSNMP,puerto):
     iterator = getCmd(
         SnmpEngine(),
