@@ -1,13 +1,13 @@
 -----------------------------------------Sistema operativo------------------------------------------
-Linux-edgar-Ubuntu-5.15.0-47-generic-#51-Ubuntu-SMP-Thu-Aug-11-07:51:15-UTC-2022-x86_64
+Linux-kimi-5.4.0-74-generic-#83-Ubuntu-SMP-Sat-May-8-02:35:39-UTC-2021-x86_64
 ---------------------------------------Nombre de dispositivo----------------------------------------
-edgar-Ubuntu
+kimi
 ----------------------------------------------Contacto----------------------------------------------
-edgargarcia.0129@gmail.com
+kimimaro1789@gmail.com
 ---------------------------------------------Ubicacion----------------------------------------------
-"Laboratorio-Redes-ESCOM"
+"Mi-compu"
 ----------------------------------------Numero de interfaces----------------------------------------
--> 1
+-> 4
 ------------------------------Estado administrativo de las Interfaces-------------------------------
 Lista de valores :
 1--> up
@@ -20,10 +20,13 @@ Lista de valores :
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 Nombre ---> Estado
 lo-> up
+Realtek Semiconductor Co., Ltd. RTL810xE PCI Express Fast Ethernet controller-> down
+Ralink corp. RT3290 Wireless 802.11n 1T/1R PCIe-> up
+virbr0-> down
 ##################################################
 Operacion seleccionada : 1/ Agregar Agente
-Comunidad : comunidadASR
+Comunidad : Edgar
 Version de SNMP (0-v1, 1-v2) : 1
-Host/IP : localhost
+Host/IP : 192.168.212.28
 ##################################################
 *****************************************Administrador SNMP*****************************************
