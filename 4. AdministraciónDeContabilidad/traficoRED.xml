@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rrd SYSTEM "https://oss.oetiker.ch/rrdtool/rrdtool.dtd">
+<!-- Round Robin Database Dump -->
+<rrd>
+	<version>0003</version>
+	<step>60</step> <!-- Seconds -->
+	<lastupdate>1666482212</lastupdate> <!-- 2022-10-22 18:43:32 CDT -->
+
+	<ds>
+		<name> inoctets </name>
+		<type> COUNTER </type>
+		<minimal_heartbeat>120</minimal_heartbeat>
+		<min>NaN</min>
+		<max>NaN</max>
+
+		<!-- PDP Status -->
+		<last_ds>394292518</last_ds>
+		<value>5.5073600000e+05</value>
+		<unknown_sec> 5 </unknown_sec>
+	</ds>
+
+	<ds>
+		<name> outoctets </name>
+		<type> COUNTER </type>
+		<minimal_heartbeat>120</minimal_heartbeat>
+		<min>NaN</min>
+		<max>NaN</max>
+
+		<!-- PDP Status -->
+		<last_ds>14697566</last_ds>
+		<value>3.2817000000e+04</value>
+		<unknown_sec> 5 </unknown_sec>
+	</ds>
+
+	<!-- Round Robin Archives -->
+	<rra>
+		<cf>AVERAGE</cf>
+		<pdp_per_row>5</pdp_per_row> <!-- 300 seconds -->
+
+		<params>
+		<xff>5.0000000000e-01</xff>
+		</params>
+		<cdp_prep>
+			<ds>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
+			<value>NaN</value>
+			<unknown_datapoints>3</unknown_datapoints>
+			</ds>
+			<ds>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
+			<value>NaN</value>
+			<unknown_datapoints>3</unknown_datapoints>
+			</ds>
+		</cdp_prep>
+		<database>
+			<!-- 2022-10-22 18:20:00 CDT / 1666480800 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:25:00 CDT / 1666481100 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:30:00 CDT / 1666481400 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:35:00 CDT / 1666481700 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:40:00 CDT / 1666482000 --> <row><v>NaN</v><v>NaN</v></row>
+		</database>
+	</rra>
+	<rra>
+		<cf>AVERAGE</cf>
+		<pdp_per_row>1</pdp_per_row> <!-- 60 seconds -->
+
+		<params>
+		<xff>5.0000000000e-01</xff>
+		</params>
+		<cdp_prep>
+			<ds>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
+			<value>NaN</value>
+			<unknown_datapoints>0</unknown_datapoints>
+			</ds>
+			<ds>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
+			<value>NaN</value>
+			<unknown_datapoints>0</unknown_datapoints>
+			</ds>
+		</cdp_prep>
+		<database>
+			<!-- 2022-10-22 18:24:00 CDT / 1666481040 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:25:00 CDT / 1666481100 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:26:00 CDT / 1666481160 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:27:00 CDT / 1666481220 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:28:00 CDT / 1666481280 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:29:00 CDT / 1666481340 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:30:00 CDT / 1666481400 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:31:00 CDT / 1666481460 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:32:00 CDT / 1666481520 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:33:00 CDT / 1666481580 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:34:00 CDT / 1666481640 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:35:00 CDT / 1666481700 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:36:00 CDT / 1666481760 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:37:00 CDT / 1666481820 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:38:00 CDT / 1666481880 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:39:00 CDT / 1666481940 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:40:00 CDT / 1666482000 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:41:00 CDT / 1666482060 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:42:00 CDT / 1666482120 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-10-22 18:43:00 CDT / 1666482180 --> <row><v>NaN</v><v>NaN</v></row>
+		</database>
+	</rra>
+</rrd>
