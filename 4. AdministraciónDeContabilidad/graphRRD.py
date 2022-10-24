@@ -8,8 +8,8 @@ tiempo_inicial = tiempo_actual - 600
 
 
 ret = rrdtool.graph( "traficoRED.png",
-                     "--start",str(tiempo_inicial),
-                     "--end","N",
+                     "--start",str(tiempo_inicial),#se puede poner --start=num de fecha
+                     "--end",str(tiempo_actual),#N
                      "--vertical-label=Bytes/s",
                      "--title=Tráfico de Red de un agente \n Usando SNMP y RRDtools",
                      "DEF:traficoEntrada=traficoRED.rrd:inoctets:AVERAGE",
