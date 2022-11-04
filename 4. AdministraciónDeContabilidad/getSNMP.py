@@ -18,4 +18,4 @@ def consultaSNMP(comunidad,host,oid):
             resultado= varB.split()[2]
     return resultado
 
-print(consultaSNMP("comunidadSNMP","localhost","1.3.6.1.2.1.1.1.0"))
+#print(consultaSNMP("comunidadSNMP","localhost","1.3.6.1.2.1.1.1.0"))
