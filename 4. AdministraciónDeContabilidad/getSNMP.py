@@ -1,5 +1,6 @@
 from pysnmp.hlapi import *
 
+#Funciòn get para hacer las consultas a la mib y monitorizar
 def consultaSNMP(comunidad,host,oid):
     errorIndication, errorStatus, errorIndex, varBinds = next(
         getCmd(SnmpEngine(),
