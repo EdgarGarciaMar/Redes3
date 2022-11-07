@@ -1,7 +1,7 @@
 import sys
 import rrdtool
 import time
-
+import datetime
 #Creaciòn de la grafica, y de igual forma se define el tiempo a graficar por el usuario
 
 def graficar():
@@ -35,3 +35,28 @@ def graficar():
                          "LINE6:escalaIn#fb00ff:Tráfico de segMensajes",
                          "LINE7:escalaIn#ff9300:Tráfico de dataNoRec",
                          )
+
+#print ("time.time(): %f " %  time.time())
+#print (time.localtime( time.time() ))
+#print (time.asctime( time.localtime(time.time()) ))
+
+
+
+
+if __name__ == "__main__":
+    hora_actual = datetime.datetime.now()
+    print(f'Hora actual: {hora_actual}')
+    iso = hora_actual.timetuple()
+    iso2 = time.strftime('%m-%Y-%dT%H:%M:%S', iso)
+
+    resultado = hora_actual + datetime.timedelta(minutes=10)
+    print(f'Hora modificada: {resultado}')
+    a = resultado.timetuple()
+    b = time.strftime('%m-%Y-%dT%H:%M:%S', a)
+    timeas = int(time.time())
+
+
+    print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s{iso2}"))
+    print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s {b}"))
+    print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s{timeas}"))
+
