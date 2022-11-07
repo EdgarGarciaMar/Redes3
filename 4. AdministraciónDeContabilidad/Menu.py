@@ -17,7 +17,7 @@ class Menu:
         min = int(self.minutos)
         self.generarReporte(min)
 
-    def generarReporte(self,min):
+    def generarReporte(self,min): #usar radius para el reporte
         hora_actual = datetime.datetime.now()
         #print(f'Hora actual: {hora_actual}')
         iso = hora_actual.timetuple()

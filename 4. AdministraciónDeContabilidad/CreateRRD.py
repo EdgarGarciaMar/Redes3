@@ -14,7 +14,7 @@ def iniciarRrdtool():
                          "DS:segmentosenviados:COUNTER:120:U:U",
                          "DS:datagramasnoreci:COUNTER:120:U:U",
                          "RRA:AVERAGE:0.5:5:5",
-                         "RRA:AVERAGE:0.5:1:20")
+                         "RRA:AVERAGE:0.5:1:1440")
 
     if ret:
         print (rrdtool.error())
