@@ -88,7 +88,7 @@ class Menu:
         pdf.add_page()
         with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt") as f:
             s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
-            if s.find(b'Windows') != -1:
+            if s.find(b'Hardware') != -1:
                 pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/windows.jpg",70,30,60,40)
             if s.find(b'Linux') != -1:
                 pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/linux.jpg",70,30,60,40)
