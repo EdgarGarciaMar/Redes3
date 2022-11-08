@@ -1,15 +1,22 @@
-Version SNMP: 1
+Version SNMP: 0
 Nombre del dispositivo: edgar-Ubuntu
 Sistema Operativo: Linux
 Description: Accounting Server
-Date: Tue Nov  8 16:54:18 2022
+Date: Tue Nov  8 17:00:18 2022
 Protocolo: SNMP
-Output octets: 3945395
-Input octes: 3945395
-****Monitoreando AVERAGE:  11-2022-08T16:34:18****
+Output octets: 4077260
+Input octes: 4077260
+****Monitoreando AVERAGE:  11-2022-08T16:45:18****
 **************************************************
 inoctets
 **************************************************
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -1222,13 +1229,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -1667,6 +1667,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -2752,13 +2759,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -3197,6 +3197,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -4282,13 +4289,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -4727,6 +4727,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -5812,13 +5819,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -6257,6 +6257,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -7342,13 +7349,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -7787,6 +7787,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -8872,13 +8879,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -9317,6 +9317,13 @@ None
 None
 None
 None
+None
+None
+None
+None
+None
+None
+None
 210.53846153846155
 120.92307692307692
 0.0
@@ -10402,13 +10409,6 @@ None
 0.0
 0.0
 0.0
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None

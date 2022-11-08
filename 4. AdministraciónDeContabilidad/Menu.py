@@ -89,12 +89,12 @@ class Menu:
         with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt") as f:
             s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
             if s.find(b'Windows') != -1:
-                pdf.logo("windows.jpg",70,30,60,40)
+                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/windows.jpg",70,30,60,40)
             if s.find(b'Linux') != -1:
-                pdf.logo("linux.jpg",70,30,60,40)
+                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/linux.jpg",70,30,60,40)
             if s.find(b'Mac') != -1:
-                pdf.logo("mac.png",70,30,60,40)
-        pdf.logo("imagen.jpg",0,0,60,20)
+                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/mac.png",70,30,60,40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/imagen.jpg",0,0,60,20)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoMulticast.png", 60, 85, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoIPV4.png", 60, 125, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoICMP.png", 60, 165, 90, 40)
