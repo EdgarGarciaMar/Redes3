@@ -22,7 +22,7 @@ anchoBanda = ""
 paquetesTCP = ""
 datagramasUDP = ""
 
-def actualizarRrdtool(comunidad,host,puerto,versionSNMP):
+def actualizarRrdtool(comunidad,host,puerto,versionSNMP,hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
 
     while 1:
         total_input_traffic = int( consultaSNMP(comunidad=comunidad,host=host, oid='1.3.6.1.2.1.2.2.1.10.2',puerto=puerto,versionSNMP=versionSNMP))
@@ -40,7 +40,7 @@ def actualizarRrdtool(comunidad,host,puerto,versionSNMP):
 
         rrdtool.update('traficoRED.rrd', valor)
         rrdtool.dump('traficoRED.rrd','traficoRED.xml')
-        graficar()
+        graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A)
         time.sleep(1)
 
     if ret:

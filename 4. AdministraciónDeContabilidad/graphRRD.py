@@ -4,10 +4,12 @@ import time
 import datetime
 #Creaciòn de la grafica, y de igual forma se define el tiempo a graficar por el usuario
 
-def graficar():
+def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
     tiempo_actual = int(time.time())
     #Grafica desde el tiempo actual menos diez minutos
     tiempo_inicial = tiempo_actual - 600#1200
+
+
     """ret = rrdtool.graph( "traficoRED.png",
                          "--start",str(tiempo_inicial),
                          "--end",str(tiempo_actual),
@@ -41,8 +43,8 @@ def graficar():
                          "LINE7:escalaIn#ff9300:Tráfico de dataNoRec",
                          )"""
     ret1 = rrdtool.graph( "traficoMulticast.png",
-                         "--start",str(tiempo_inicial),
-                         "--end",str(tiempo_actual),
+                         "--start",str(hora_gra_I),
+                         "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
                          "--title=Sistema de contabilidad \n paquetes multicast",
                          "DEF:packMulti=traficoRED.rrd:packmulticast:AVERAGE",
@@ -50,8 +52,8 @@ def graficar():
                          "LINE3:escala1#49ff00:Tráfico de packMulti")
 
     ret2 = rrdtool.graph("traficoIPV4.png",
-                         "--start", str(tiempo_inicial),
-                         "--end", str(tiempo_actual),
+                         "--start",str(hora_gra_I),
+                         "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
                          "--title=Sistema de contabilidad \n paquetes IPV4",
                          "DEF:packIPV4=traficoRED.rrd:packrecibidosexito:AVERAGE",
@@ -59,8 +61,8 @@ def graficar():
                          "LINE4:escala2#00ecff:Tráfico de packIPV4")
 
     ret3 = rrdtool.graph("traficoICMP.png",
-                         "--start", str(tiempo_inicial),
-                         "--end", str(tiempo_actual),
+                         "--start",str(hora_gra_I),
+                         "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
                          "--title=Sistema de contabilidad \n Mensajes ICMP",
                          "DEF:icmpMensajes=traficoRED.rrd:respuestaicmp:AVERAGE",
@@ -68,8 +70,8 @@ def graficar():
                          "LINE5:escala3#ffff00:Tráfico de icmpMensajes")
 
     ret4 = rrdtool.graph("traficoSegmentos.png",
-                         "--start", str(tiempo_inicial),
-                         "--end", str(tiempo_actual),
+                         "--start",str(hora_gra_I),
+                         "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
                          "--title=Sistema de contabilidad \n Segmentos Enviados",
                          "DEF:segmentosEnvi=traficoRED.rrd:segmentosenviados:AVERAGE",
@@ -77,8 +79,8 @@ def graficar():
                          "LINE6:escala4#fb00ff:Tráfico de segMensajes" )
 
     ret5 = rrdtool.graph("traficoDatagramas.png",
-                         "--start", str(tiempo_inicial),
-                         "--end", str(tiempo_actual),
+                         "--start",str(hora_gra_I),
+                         "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
                          "--title=Sistema de contabilidad \n Datagramas No Recibidos",
                          "DEF:datagramaNoRe=traficoRED.rrd:datagramasnoreci:AVERAGE",
@@ -103,9 +105,10 @@ if __name__ == "__main__":
     a = resultado.timetuple()
     b = time.strftime('%m-%Y-%dT%H:%M:%S', a)
     timeas = int(time.time())
-
+    print(type(iso2))
 
     print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s{iso2}"))
+    print("division".center(50,"-"))
     print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s {b}"))
-    print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s{timeas}"))
+    #print(rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s{timeas}"))
 
