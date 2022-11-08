@@ -36,7 +36,7 @@ def actualizarRrdtool(comunidad,host,puerto,versionSNMP,hora_inicio,hora_actual,
 
         valor = "N:" + str(total_input_traffic) + ':' + str(total_output_traffic)+":"+str(total_paquetes_multicast_recibidos)+":"+str(total_paquetes_recibidos_exitosamente_ipv4)+":"+str(total_respuestas_ICMP_enviadas)+":"+str(total_segmentos_enviados)+":"+str(total_de_datagramas_no_recibidos_por_puerto)
 
-        print (valor)
+        #print (valor)
 
         rrdtool.update('traficoRED.rrd', valor)
         rrdtool.dump('traficoRED.rrd','traficoRED.xml')

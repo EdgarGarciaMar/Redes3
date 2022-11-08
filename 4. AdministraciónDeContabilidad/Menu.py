@@ -1,7 +1,12 @@
+import mmap
+import os
+import webbrowser
 
 import rrdtool
 import time
 import datetime
+
+from Fpdf import Fpdf
 from getSNMP import consultaSNMP
 from iniciarMonitoreo import Hilo
 class Menu:
@@ -51,17 +56,51 @@ class Menu:
             archivo.write("\n")
             archivo.write(f"Nombre del dispositivo {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
             archivo.write("\n")
+            archivo.write(f"Sistema Operativo {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.1.1.0', self.puerto, self.versionSNMP)}")
+            archivo.write("\n")
             archivo.write("Description: Accounting Server")
             archivo.write("\n")
             archivo.write(time.asctime( time.localtime(time.time()) ))
             archivo.write("\n")
             archivo.write("Protocolo: SNMP")
             archivo.write("\n")
-            archivo.write(f"Monitoriando desde : {b}".center(50,"*"))
+            archivo.write(f"Monitoriando AVERAGE:  {b}".center(50,"*"))
             archivo.write("\n")
-            print(q,file=archivo)
+            for x in q[1]:
+                print("".center(50,"*"),file=archivo)
+                print(x,file=archivo)
+                print("".center(50, "*"),file=archivo)
+                print(q[2][1][0],file=archivo)
+                for g in range(218):
+                    for a in q[2][g]:
+                        print(a,file=archivo)
+            self.generarPdf()
+    def findFile(self,name,path):
+        for dirpath, dirname, filename in os.walk(path):
+            if name in filename:
+                return os.path.join(dirpath, name)
 
-
+    def generarPdf(self):
+        name = self.host
+        titulo = "-Practica 2-Edgar Garcia Marciano-2020630175-"
+        pdf = Fpdf()
+        pdf.add_page()
+        with open("reporte.txt") as f:
+            s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+            if s.find(b'Windows') != -1:
+                pdf.logo("windows.jpg",70,30,60,40)
+            if s.find(b'Linux') != -1:
+                pdf.logo("linux.jpg",70,30,60,40)
+            if s.find(b'Mac') != -1:
+                pdf.logo("mac.png",70,30,60,40)
+        pdf.logo("imagen.jpg",0,0,60,20)
+        pdf.titles(titulo)
+        pdf.texts(name)
+        pdf.set_author("Gestor de contabilidad SNMP")
+        pdf1 = name + ".pdf"
+        pdf.output(pdf1)
+        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/" + self.host + '.pdf'
+        webbrowser.open_new(path)
 
 
 
