@@ -3,7 +3,7 @@ import rrdtool
 import time
 import datetime
 from getSNMP import consultaSNMP
-
+from iniciarMonitoreo import Hilo
 class Menu:
     mib = "1.3.6.1.2.1."
     sistemaOperativo = "1.1.0"
