@@ -23,7 +23,7 @@ class Hilo(threading.Thread):
 
 
 if __name__ == "__main__":
-    # iniciarRrdtool()
+    # iniciarRrdtool() #Esta linea solo se usa una vez, para crear la base rrdtool
     # actualizarRrdtool(comunidad="comunidadSNMP",host="localhost",puerto=161,versionSNMP=0)
     hora_actual = datetime.datetime.now()
     print(f'Hora actual: {hora_actual}')
