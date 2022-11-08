@@ -4,7 +4,7 @@
 <rrd>
 	<version>0003</version>
 	<step>60</step> <!-- Seconds -->
-	<lastupdate>1667949707</lastupdate> <!-- 2022-11-08 17:21:47 CST -->
+	<lastupdate>1667949716</lastupdate> <!-- 2022-11-08 17:21:56 CST -->
 
 	<ds>
 		<name> inoctets </name>
@@ -14,8 +14,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>386556352</last_ds>
-		<value>2.7356000000e+04</value>
+		<last_ds>386589916</last_ds>
+		<value>6.0920000000e+04</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -27,8 +27,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>26264619</last_ds>
-		<value>8.8524973638e+03</value>
+		<last_ds>26457161</last_ds>
+		<value>2.0139449736e+05</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -53,8 +53,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>181147</last_ds>
-		<value>4.7368161306e+02</value>
+		<last_ds>181368</last_ds>
+		<value>6.9468161306e+02</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -79,8 +79,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>66929</last_ds>
-		<value>7.5581009832e+01</value>
+		<last_ds>67149</last_ds>
+		<value>2.9558100983e+02</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
