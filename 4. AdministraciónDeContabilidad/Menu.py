@@ -40,7 +40,7 @@ class Menu:
 
         timeas = int(time.time())
         timeas2 = timeas - (minutos * 60)
-
+        print("Inicio-Monitoreo".center(50,"*"))
         hilo = Hilo(comunidad="comunidadSNMP", host="localhost", puerto=161, versionSNMP=0,hora_inicio=b,hora_actual=iso2,hora_gra_I=timeas2,hora_gra_A=timeas)
         hilo.start()
 
@@ -59,7 +59,6 @@ class Menu:
             archivo.write("\n")
             archivo.write(f"Monitoriando desde : {b}".center(50,"*"))
             archivo.write("\n")
-            #print(p,file=archivo)
             print(q,file=archivo)
 
 
