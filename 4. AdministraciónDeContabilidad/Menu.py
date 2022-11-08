@@ -51,7 +51,7 @@ class Menu:
 
         q =rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s {b}")
 
-        with open("reporte.txt", "w", encoding="utf8") as archivo:
+        with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt", "w", encoding="utf8") as archivo:
             archivo.write(f'Version SNMP: {self.versionSNMP}')
             archivo.write("\n")
             archivo.write(f"Nombre del dispositivo: {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
@@ -86,7 +86,7 @@ class Menu:
         titulo = "-Practica 2-Edgar Garcia Marciano-2020630175-"
         pdf = Fpdf()
         pdf.add_page()
-        with open("reporte.txt") as f:
+        with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt") as f:
             s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
             if s.find(b'Windows') != -1:
                 pdf.logo("windows.jpg",70,30,60,40)
@@ -95,18 +95,18 @@ class Menu:
             if s.find(b'Mac') != -1:
                 pdf.logo("mac.png",70,30,60,40)
         pdf.logo("imagen.jpg",0,0,60,20)
-        pdf.logo("traficoMulticast.png", 60, 85, 90, 40)
-        pdf.logo("traficoIPV4.png", 60, 125, 90, 40)
-        pdf.logo("traficoICMP.png", 60, 165, 90, 40)
-        pdf.logo("traficoSegmentos.png", 60, 205, 90, 40)
-        pdf.logo("traficoDatagramas.png", 60, 245, 90, 40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoMulticast.png", 60, 85, 90, 40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoIPV4.png", 60, 125, 90, 40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoICMP.png", 60, 165, 90, 40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoSegmentos.png", 60, 205, 90, 40)
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoDatagramas.png", 60, 245, 90, 40)
         pdf.titles(titulo)
         pdf.texts2()
         pdf.texts()
         pdf.set_author("Gestor de contabilidad SNMP")
-        pdf1 = name + ".pdf"
+        pdf1 = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/"+name+".pdf"
         pdf.output(pdf1)
-        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/" + name + '.pdf'
+        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/"+name+'.pdf'
         webbrowser.open_new(path)
 
 

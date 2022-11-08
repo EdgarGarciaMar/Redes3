@@ -2,21 +2,14 @@ Version SNMP: 1
 Nombre del dispositivo: edgar-Ubuntu
 Sistema Operativo: Linux
 Description: Accounting Server
-Date: Tue Nov  8 16:31:54 2022
+Date: Tue Nov  8 16:54:18 2022
 Protocolo: SNMP
-Output octets: 3009226
-Input octes: 3009226
-****Monitoreando AVERAGE:  11-2022-08T16:16:53****
+Output octets: 3945395
+Input octes: 3945395
+****Monitoreando AVERAGE:  11-2022-08T16:34:18****
 **************************************************
 inoctets
 **************************************************
-None
-None
-None
-None
-None
-None
-None
 None
 None
 None
@@ -1229,6 +1222,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -1667,13 +1667,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -2759,6 +2752,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -3197,13 +3197,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -4289,6 +4282,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -4727,13 +4727,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -5819,6 +5812,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -6257,13 +6257,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -7349,6 +7342,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -7787,13 +7787,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -8879,6 +8872,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None
@@ -9317,13 +9317,6 @@ None
 None
 None
 None
-None
-None
-None
-None
-None
-None
-None
 210.53846153846155
 120.92307692307692
 0.0
@@ -10409,6 +10402,13 @@ None
 0.0
 0.0
 0.0
+None
+None
+None
+None
+None
+None
+None
 None
 None
 None

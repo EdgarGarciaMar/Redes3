@@ -42,7 +42,7 @@ def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
                          "LINE6:escalaIn#fb00ff:Tráfico de segMensajes",
                          "LINE7:escalaIn#ff9300:Tráfico de dataNoRec",
                          )"""
-    ret1 = rrdtool.graph( "traficoMulticast.png",
+    ret1 = rrdtool.graph( "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoMulticast.png",
                          "--start",str(hora_gra_I),
                          "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
@@ -51,7 +51,7 @@ def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
                          "CDEF:escala1=packMulti,8,*",
                          "LINE3:escala1#49ff00:Tráfico de packMulti")
 
-    ret2 = rrdtool.graph("traficoIPV4.png",
+    ret2 = rrdtool.graph("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoIPV4.png",
                          "--start",str(hora_gra_I),
                          "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
@@ -60,7 +60,7 @@ def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
                          "CDEF:escala2=packIPV4,8,*",
                          "LINE4:escala2#00ecff:Tráfico de packIPV4")
 
-    ret3 = rrdtool.graph("traficoICMP.png",
+    ret3 = rrdtool.graph("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoICMP.png",
                          "--start",str(hora_gra_I),
                          "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
@@ -69,7 +69,7 @@ def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
                          "CDEF:escala3=icmpMensajes,8,*",
                          "LINE5:escala3#ffff00:Tráfico de icmpMensajes")
 
-    ret4 = rrdtool.graph("traficoSegmentos.png",
+    ret4 = rrdtool.graph("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoSegmentos.png",
                          "--start",str(hora_gra_I),
                          "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
@@ -78,7 +78,7 @@ def graficar(hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
                          "CDEF:escala4=segmentosEnvi,8,*",
                          "LINE6:escala4#fb00ff:Tráfico de segMensajes" )
 
-    ret5 = rrdtool.graph("traficoDatagramas.png",
+    ret5 = rrdtool.graph("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoDatagramas.png",
                          "--start",str(hora_gra_I),
                          "--end",str(hora_gra_A),
                          "--vertical-label=Bytes/s",
