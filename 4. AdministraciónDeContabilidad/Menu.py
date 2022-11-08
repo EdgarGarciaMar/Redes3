@@ -23,6 +23,8 @@ class Menu:
         self.puerto = puerto
 
     def inicioContabilidad(self,ano,mes,dia,hora,minutos):
+        hilo = Hilo(comunidad="comunidadSNMP", host="localhost", puerto=161, versionSNMP=0)
+        hilo.start()
         minutos1 = int(minutos)
         self.generarReporte(ano,mes,dia,hora,minutos1)
 
