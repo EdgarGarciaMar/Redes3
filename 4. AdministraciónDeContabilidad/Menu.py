@@ -54,17 +54,21 @@ class Menu:
         with open("reporte.txt", "w", encoding="utf8") as archivo:
             archivo.write(f'Version SNMP: {self.versionSNMP}')
             archivo.write("\n")
-            archivo.write(f"Nombre del dispositivo {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
+            archivo.write(f"Nombre del dispositivo: {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
             archivo.write("\n")
-            archivo.write(f"Sistema Operativo {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.1.1.0', self.puerto, self.versionSNMP)}")
+            archivo.write(f"Sistema Operativo: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.1.1.0', self.puerto, self.versionSNMP)}")
             archivo.write("\n")
             archivo.write("Description: Accounting Server")
             archivo.write("\n")
-            archivo.write(time.asctime( time.localtime(time.time()) ))
+            archivo.write(f"Date: {time.asctime( time.localtime(time.time()) )}")
             archivo.write("\n")
             archivo.write("Protocolo: SNMP")
             archivo.write("\n")
-            archivo.write(f"Monitoriando AVERAGE:  {b}".center(50,"*"))
+            archivo.write(f"Output octets: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.2.2.1.10.1', self.puerto, self.versionSNMP)}")
+            archivo.write("\n")
+            archivo.write(f"Input octes: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.2.2.1.16.1', self.puerto, self.versionSNMP)}")
+            archivo.write("\n")
+            archivo.write(f"Monitoreando AVERAGE:  {b}".center(50,"*"))
             archivo.write("\n")
             for x in q[1]:
                 print("".center(50,"*"),file=archivo)
@@ -75,12 +79,9 @@ class Menu:
                     for a in q[2][g]:
                         print(a,file=archivo)
             self.generarPdf()
-    def findFile(self,name,path):
-        for dirpath, dirname, filename in os.walk(path):
-            if name in filename:
-                return os.path.join(dirpath, name)
 
     def generarPdf(self):
+        #time.sleep(15)
         name = self.host
         titulo = "-Practica 2-Edgar Garcia Marciano-2020630175-"
         pdf = Fpdf()
@@ -94,12 +95,18 @@ class Menu:
             if s.find(b'Mac') != -1:
                 pdf.logo("mac.png",70,30,60,40)
         pdf.logo("imagen.jpg",0,0,60,20)
+        pdf.logo("traficoMulticast.png", 60, 85, 90, 40)
+        pdf.logo("traficoIPV4.png", 60, 125, 90, 40)
+        pdf.logo("traficoICMP.png", 60, 165, 90, 40)
+        pdf.logo("traficoSegmentos.png", 60, 205, 90, 40)
+        pdf.logo("traficoDatagramas.png", 60, 245, 90, 40)
         pdf.titles(titulo)
-        pdf.texts(name)
+        pdf.texts2()
+        pdf.texts()
         pdf.set_author("Gestor de contabilidad SNMP")
         pdf1 = name + ".pdf"
         pdf.output(pdf1)
-        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/" + self.host + '.pdf'
+        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/" + name + '.pdf'
         webbrowser.open_new(path)
 
 

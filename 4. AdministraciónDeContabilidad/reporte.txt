@@ -1,10 +1,12 @@
-Version SNMP: 0
-Nombre del dispositivo edgar-Ubuntu
-Sistema Operativo Linux
+Version SNMP: 1
+Nombre del dispositivo: edgar-Ubuntu
+Sistema Operativo: Linux
 Description: Accounting Server
-Tue Nov  8 14:37:57 2022
+Date: Tue Nov  8 16:31:54 2022
 Protocolo: SNMP
-****Monitoriando AVERAGE:  11-2022-08T14:17:57****
+Output octets: 3009226
+Input octes: 3009226
+****Monitoreando AVERAGE:  11-2022-08T16:16:53****
 **************************************************
 inoctets
 **************************************************
