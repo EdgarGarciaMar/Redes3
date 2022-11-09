@@ -51,23 +51,26 @@ class Menu:
         print("Inicio-Monitoreo".center(50,"*"))
         hilo = Hilo(comunidad="comunidadSNMP", host="localhost", puerto=161, versionSNMP=0,hora_inicio=b,hora_actual=iso2,hora_gra_I=timeas2,hora_gra_A=timeas)
         hilo.start()
-
         q =rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s {b}")
 
         with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt", "w", encoding="utf8") as archivo:
             archivo.write(f'Version SNMP: {self.versionSNMP}')
             archivo.write("\n")
-            archivo.write(f"Nombre del dispositivo {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
+            archivo.write(f"Nombre del dispositivo: {consultaSNMP(self.comunidad,self.host, self.mib+self.nombreDispositivo,self.puerto,self.versionSNMP)}")
             archivo.write("\n")
-            archivo.write(f"Sistema Operativo {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.1.1.0', self.puerto, self.versionSNMP)}")
+            archivo.write(f"Sistema Operativo: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.1.1.0', self.puerto, self.versionSNMP)}")
             archivo.write("\n")
             archivo.write("Description: Accounting Server")
             archivo.write("\n")
-            archivo.write(time.asctime( time.localtime(time.time()) ))
+            archivo.write(f"Date: {time.asctime( time.localtime(time.time()) )}")
             archivo.write("\n")
             archivo.write("Protocolo: SNMP")
             archivo.write("\n")
-            archivo.write(f"Monitoriando AVERAGE:  {b}".center(50,"*"))
+            archivo.write(f"Output octets: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.2.2.1.10.1', self.puerto, self.versionSNMP)}")
+            archivo.write("\n")
+            archivo.write(f"Input octes: {consultaSNMP(self.comunidad, self.host,'1.3.6.1.2.1.2.2.1.16.1', self.puerto, self.versionSNMP)}")
+            archivo.write("\n")
+            archivo.write(f"Monitoreando AVERAGE:  {b}".center(50,"*"))
             archivo.write("\n")
             for x in q[1]:
                 print("".center(50,"*"),file=archivo)
@@ -78,12 +81,9 @@ class Menu:
                     for a in q[2][g]:
                         print(a,file=archivo)
             self.generarPdf()
-    def findFile(self,name,path):
-        for dirpath, dirname, filename in os.walk(path):
-            if name in filename:
-                return os.path.join(dirpath, name)
 
     def generarPdf(self):
+        #time.sleep(15)
         name = self.host
         titulo = "-Practica 2-Edgar Garcia Marciano-2020630175-"
         pdf = Fpdf()
@@ -95,7 +95,6 @@ class Menu:
             if s.find(b'Linux') != -1:
                 pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/linux.jpg",70,30,60,40)
             if s.find(b'Mac') != -1:
-<<<<<<< HEAD
                 pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/mac.png",70,30,60,40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/imagen.jpg",0,0,60,20)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoMulticast.png", 60, 85, 90, 40)
@@ -103,20 +102,13 @@ class Menu:
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoICMP.png", 60, 165, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoSegmentos.png", 60, 205, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoDatagramas.png", 60, 245, 90, 40)
-=======
-                pdf.logo("mac.png",70,30,60,40)
-        pdf.logo("imagen.jpg",0,0,60,20)
->>>>>>> parent of 897846a (Reporte completo)
         pdf.titles(titulo)
-        pdf.texts(name)
+        pdf.texts2()
+        pdf.texts()
         pdf.set_author("Gestor de contabilidad SNMP")
         pdf1 = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/"+name+".pdf"
         pdf.output(pdf1)
-<<<<<<< HEAD
         path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/"+name+'.pdf'
-=======
-        path = "/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/" + self.host + '.pdf'
->>>>>>> parent of 897846a (Reporte completo)
         webbrowser.open_new(path)
 
 

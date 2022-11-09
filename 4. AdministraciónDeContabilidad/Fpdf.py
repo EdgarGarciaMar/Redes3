@@ -12,18 +12,19 @@ class Fpdf(FPDF):
     def logo(self,name,x,y,w,h):
         self.image(name,x,y,w,h)
     #Mètodo para generar el cuerpo del pdf segùn la informaciòn del archivo del agente
-<<<<<<< HEAD
     def texts(self):
         with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt","rb") as xy:
-=======
-    def texts(self,name):
-        with open("reporte.txt","rb") as xy:
->>>>>>> parent of 897846a (Reporte completo)
             txt = xy.read().decode("latin-1")
-            self.set_xy(10.0,80.0)
+            self.set_xy(10.0,300.0)
             self.set_text_color(76.0,32,250)
             self.set_font("Arial","",12)
             self.multi_cell(0,10,txt)
+    def texts2(self):
+        txt = "Estadisticas".center(50,"-")
+        self.set_xy(60.0,70.0)
+        self.set_text_color(76.0,32,250)
+        self.set_font("Arial","",12)
+        self.multi_cell(0,10,txt)
     #Mètodo para generar el titulo del pdf
     def titles(self,title):
         self.set_xy(0.0,0.0)
