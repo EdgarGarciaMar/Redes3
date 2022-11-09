@@ -42,16 +42,22 @@ class Menu:
         iso2 = time.strftime('%m-%Y-%dT%H:%M:%S', iso)
         #print(type(iso2))
         resultado = hora_actual - datetime.timedelta(minutes=minutos)
-        print(f'Hora modificada: {resultado}')
+        #print(f'Hora modificada: {resultado}')
         a = resultado.timetuple()
         b = time.strftime('%m-%Y-%dT%H:%M:%S', a)
 
         timeas = int(time.time())
         timeas2 = timeas - (minutos * 60)
-        print("Inicio-Monitoreo".center(50,"*"))
-        hilo = Hilo(comunidad="comunidadSNMP", host="localhost", puerto=161, versionSNMP=0,hora_inicio=b,hora_actual=iso2,hora_gra_I=timeas2,hora_gra_A=timeas)
+        #print("Inicio-Monitoreo".center(50,"*"))
+
+        fecha_inicio = f'{mes}-{ano}-{dia}T{hora}:{str(minutos)}:{str(0)}'
+
+        hilo = Hilo(comunidad="comunidadSNMP", host="localhost", puerto=161, versionSNMP=0,hora_gra_I=fecha_inicio,hora_gra_A=timeas)
         hilo.start()
-        q =rrdtool.fetch("traficoRED.rrd","AVERAGE",f"-s {b}")
+
+
+        print("Inicio:"+fecha_inicio)
+        q =rrdtool.fetch("-s",iso2,"-e",fecha_inicio,"traficoRED.rrd","AVERAGE",)
 
         with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt", "w", encoding="utf8") as archivo:
             archivo.write(f'Version SNMP: {self.versionSNMP}')
@@ -72,14 +78,27 @@ class Menu:
             archivo.write("\n")
             archivo.write(f"Monitoreando AVERAGE:  {b}".center(50,"*"))
             archivo.write("\n")
-            for x in q[1]:
+            """for x in q[1]:
                 print("".center(50,"*"),file=archivo)
                 print(x,file=archivo)
                 print("".center(50, "*"),file=archivo)
                 print(q[2][1][0],file=archivo)
-                for g in range(218):
+                for g in range(5):
                     for a in q[2][g]:
-                        print(a,file=archivo)
+                        print(a,file=archivo)"""
+            archivo.write("Datos de la base".center(60,"-"))
+            archivo.write("\n")
+            print(q[1],file=archivo)
+            archivo.write("\n")
+            print(q[2],file=archivo)
+            archivo.write("\n")
+
+            for tupla in q:
+                for x in tupla:
+                    print(x,file=archivo)
+            archivo.write("\n")
+            for y in q[2]:
+                print(y,file=archivo)
             self.generarPdf()
 
     def generarPdf(self):
@@ -88,21 +107,22 @@ class Menu:
         titulo = "-Practica 2-Edgar Garcia Marciano-2020630175-"
         pdf = Fpdf()
         pdf.add_page()
-        with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt") as f:
-            s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
-            if s.find(b'Hardware') != -1:
-                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/windows.jpg",70,30,60,40)
-            if s.find(b'Linux') != -1:
-                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/linux.jpg",70,30,60,40)
-            if s.find(b'Mac') != -1:
-                pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/mac.png",70,30,60,40)
+        pdf.titles(titulo)
+
+        #with open("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/P/reporte.txt") as f:
+        #s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+        #if s.find(b'Hardware') != -1:
+        #pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/windows.jpg",70,30,60,40)
+        #if s.find(b'Linux') != -1:
+        pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/linux.jpg",70,30,60,40)
+        #if s.find(b'Mac') != -1:
+        #  pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/mac.png",70,30,60,40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/F/imagen.jpg",0,0,60,20)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoMulticast.png", 60, 85, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoIPV4.png", 60, 125, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoICMP.png", 60, 165, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoSegmentos.png", 60, 205, 90, 40)
         pdf.logo("/home/edgar/Documents/GitHub/Redes3/4. AdministraciónDeContabilidad/G/traficoDatagramas.png", 60, 245, 90, 40)
-        pdf.titles(titulo)
         pdf.texts2()
         pdf.texts()
         pdf.set_author("Gestor de contabilidad SNMP")

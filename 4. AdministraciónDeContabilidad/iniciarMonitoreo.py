@@ -6,20 +6,18 @@ import time
 
 class Hilo(threading.Thread):
 
-    def __init__(self,comunidad,host,puerto,versionSNMP,hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
+    def __init__(self,comunidad,host,puerto,versionSNMP,hora_gra_I,hora_gra_A):
         self.comunidad = comunidad
         self.host = host
         self.puerto = puerto
         self.versionSNMP = versionSNMP
-        self.hora_inicio = hora_inicio
-        self.hora_actual = hora_actual
         self.hora_gra_I = hora_gra_I
         self.hora_gra_A = hora_gra_A
         threading.Thread.__init__(self)
 
 
     def run(self):
-        actualizarRrdtool(comunidad=self.comunidad,host=self.host,puerto=self.puerto,versionSNMP=self.versionSNMP,hora_inicio=self.hora_inicio,hora_actual=self.hora_actual,hora_gra_I=self.hora_gra_I,hora_gra_A=self.hora_gra_A)
+        actualizarRrdtool(comunidad=self.comunidad,host=self.host,puerto=self.puerto,versionSNMP=self.versionSNMP,hora_gra_I=self.hora_gra_I,hora_gra_A=self.hora_gra_A)
 
 
 if __name__ == "__main__":
@@ -37,6 +35,6 @@ if __name__ == "__main__":
 
     timeas = int(time.time())
     timeas2 = timeas - (5*60)
-    hilo = Hilo(comunidad="comunidadSNMP",host="localhost",puerto=161,versionSNMP=0,hora_inicio=b,hora_actual=iso2,hora_gra_I=timeas2,hora_gra_A=timeas)
+    hilo = Hilo(comunidad="comunidadSNMP",host="localhost",puerto=161,versionSNMP=0,hora_gra_I=str(timeas2),hora_gra_A=timeas)
     hilo.start()
 

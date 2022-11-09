@@ -1,9 +1,29 @@
-Version SNMP: 1
-Nombre del dispositivo: caleb-QEMU-Virtual-Machine
+Version SNMP: 0
+Nombre del dispositivo: edgar-Ubuntu
 Sistema Operativo: Linux
 Description: Accounting Server
-Date: Wed Nov  9 09:14:54 2022
+Date: Wed Nov  9 11:54:07 2022
 Protocolo: SNMP
-Output octets: 161069
-Input octes: 161069
-****Monitoreando AVERAGE:  11-2022-09T08:24:54****
+Output octets: 2565567
+Input octes: 2565567
+****Monitoreando AVERAGE:  11-2022-09T11:44:06****
+----------------------Datos de la base----------------------
+('inoctets', 'outoctets', 'packmulticast', 'packrecibidosexito', 'respuestaicmp', 'segmentosenviados', 'datagramasnoreci')
+
+[(None, None, None, None, None, None, None), (None, None, None, None, None, None, None)]
+
+1668011040
+1668011160
+60
+inoctets
+outoctets
+packmulticast
+packrecibidosexito
+respuestaicmp
+segmentosenviados
+datagramasnoreci
+(None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None)
+
+(None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None)
