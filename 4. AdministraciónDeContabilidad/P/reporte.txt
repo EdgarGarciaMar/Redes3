@@ -1,3 +1,4 @@
+<<<<<<< HEAD:4. AdministraciónDeContabilidad/P/reporte.txt
 Version SNMP: 1
 Nombre del dispositivo: Edgar
 Sistema Operativo: Hardware:
@@ -7,6 +8,15 @@ Protocolo: SNMP
 Output octets: 0
 Input octes: 0
 ****Monitoreando AVERAGE:  11-2022-08T16:38:47****
+=======
+Version SNMP: 0
+Nombre del dispositivo edgar-Ubuntu
+Sistema Operativo Linux
+Description: Accounting Server
+Tue Nov  8 14:37:57 2022
+Protocolo: SNMP
+****Monitoriando AVERAGE:  11-2022-08T14:17:57****
+>>>>>>> parent of 897846a (Reporte completo):4. AdministraciónDeContabilidad/reporte.txt
 **************************************************
 inoctets
 **************************************************
