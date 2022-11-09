@@ -13,14 +13,12 @@ class Fpdf(FPDF):
         self.image(name,x,y,w,h)
     #Mètodo para generar el cuerpo del pdf segùn la informaciòn del archivo del agente
     def texts(self):
-        with open("P/reporte.txt", "rb") as xy:
+        with open("reporte.txt","rb") as xy:
             txt = xy.read().decode("latin-1")
-        #print(type(txt))
-        #print(txt)
-        self.set_xy(10.0,300.0)
-        self.set_text_color(76.0,32,250)
-        self.set_font("Arial","",12)
-        self.multi_cell(0,10,txt)
+            self.set_xy(10.0,300.0)
+            self.set_text_color(76.0,32,250)
+            self.set_font("Arial","",12)
+            self.multi_cell(0,10,txt)
     def texts2(self):
         txt = "Estadisticas".center(50,"-")
         self.set_xy(60.0,70.0)
@@ -38,7 +36,7 @@ if __name__ == "__main__":
     pdf = Fpdf()
     pdf.add_page()
     pdf.titles("localhost")
-    pdf.texts()
+    pdf.texts("localhost")
     pdf.set_author("Gestor de SNMP")
     pdf1 = "localhost100" + ".pdf"
     pdf.output(pdf1)

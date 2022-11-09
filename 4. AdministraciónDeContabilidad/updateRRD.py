@@ -18,8 +18,8 @@ SegmentosEnviadosConexiones ="6.11.0"
 datagramasNoEntregados ="5.2.0"#5.7.2.0
 
 
-def actualizarRrdtool(comunidad,host,puerto,versionSNMP,hora_gra_I,hora_gra_A):
-    graficar(hora_gra_I, hora_gra_A)
+def actualizarRrdtool(comunidad,host,puerto,versionSNMP,hora_inicio,hora_actual,hora_gra_I,hora_gra_A):
+    graficar(hora_inicio, hora_actual, hora_gra_I, hora_gra_A)
     while 1:
         total_input_traffic = int( consultaSNMP(comunidad=comunidad,host=host, oid='1.3.6.1.2.1.2.2.1.10.2',puerto=puerto,versionSNMP=versionSNMP))
         total_output_traffic = int(consultaSNMP(comunidad=comunidad,host=host, oid='1.3.6.1.2.1.2.2.1.16.2',puerto=puerto,versionSNMP=versionSNMP))

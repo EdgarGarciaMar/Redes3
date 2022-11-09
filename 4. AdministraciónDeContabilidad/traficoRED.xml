@@ -4,7 +4,7 @@
 <rrd>
 	<version>0003</version>
 	<step>60</step> <!-- Seconds -->
-	<lastupdate>1668016466</lastupdate> <!-- 2022-11-09 11:54:26 CST -->
+	<lastupdate>1668009862</lastupdate> <!-- 2022-11-09 10:04:22 CST -->
 
 	<ds>
 		<name> inoctets </name>
@@ -14,9 +14,9 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>34165368</last_ds>
-		<value>2.4170000000e+03</value>
-		<unknown_sec> 8 </unknown_sec>
+		<last_ds>34870881</last_ds>
+		<value>1.1836462065e+03</value>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -27,9 +27,9 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>3829034</last_ds>
-		<value>7.4000000000e+03</value>
-		<unknown_sec> 8 </unknown_sec>
+		<last_ds>4357968</last_ds>
+		<value>8.2020385888e+02</value>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -42,7 +42,7 @@
 		<!-- PDP Status -->
 		<last_ds>0</last_ds>
 		<value>0.0000000000e+00</value>
-		<unknown_sec> 8 </unknown_sec>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -53,9 +53,9 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>112712</last_ds>
-		<value>1.7500000000e+02</value>
-		<unknown_sec> 8 </unknown_sec>
+		<last_ds>90437</last_ds>
+		<value>2.0890766485e+02</value>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -68,7 +68,7 @@
 		<!-- PDP Status -->
 		<last_ds>0</last_ds>
 		<value>0.0000000000e+00</value>
-		<unknown_sec> 8 </unknown_sec>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -79,9 +79,9 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>19205</last_ds>
-		<value>1.0000000000e+00</value>
-		<unknown_sec> 8 </unknown_sec>
+		<last_ds>20795</last_ds>
+		<value>7.7774431895e+00</value>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<ds>
@@ -92,9 +92,9 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>185</last_ds>
+		<last_ds>0</last_ds>
 		<value>0.0000000000e+00</value>
-		<unknown_sec> 8 </unknown_sec>
+		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
 	<!-- Round Robin Archives -->
@@ -107,54 +107,54 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>5.4146615121e+03</primary_value>
-			<secondary_value>NaN</secondary_value>
-			<value>1.7617544741e+03</value>
-			<unknown_datapoints>3</unknown_datapoints>
+			<primary_value>3.6895594298e+03</primary_value>
+			<secondary_value>1.2943492673e+03</secondary_value>
+			<value>2.4395219841e+03</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>4.5599245323e+02</primary_value>
-			<secondary_value>NaN</secondary_value>
-			<value>1.6512036021e+03</value>
-			<unknown_datapoints>3</unknown_datapoints>
-			</ds>
-			<ds>
-			<primary_value>0.0000000000e+00</primary_value>
-			<secondary_value>NaN</secondary_value>
-			<value>0.0000000000e+00</value>
-			<unknown_datapoints>3</unknown_datapoints>
-			</ds>
-			<ds>
-			<primary_value>2.7031578473e+01</primary_value>
-			<secondary_value>NaN</secondary_value>
-			<value>1.9124650339e+01</value>
-			<unknown_datapoints>3</unknown_datapoints>
+			<primary_value>1.1056547486e+03</primary_value>
+			<secondary_value>3.9934232511e+02</secondary_value>
+			<value>3.7637677717e+03</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
 			<primary_value>0.0000000000e+00</primary_value>
-			<secondary_value>NaN</secondary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
 			<value>0.0000000000e+00</value>
-			<unknown_datapoints>3</unknown_datapoints>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>2.3948126995e+00</primary_value>
-			<secondary_value>NaN</secondary_value>
-			<value>2.5000000000e-01</value>
-			<unknown_datapoints>3</unknown_datapoints>
+			<primary_value>1.1902045935e+01</primary_value>
+			<secondary_value>1.0616666667e+01</secondary_value>
+			<value>3.1101538919e+01</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
 			<primary_value>0.0000000000e+00</primary_value>
-			<secondary_value>NaN</secondary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
 			<value>0.0000000000e+00</value>
-			<unknown_datapoints>3</unknown_datapoints>
+			<unknown_datapoints>0</unknown_datapoints>
+			</ds>
+			<ds>
+			<primary_value>3.7009381341e+00</primary_value>
+			<secondary_value>2.0000000000e+00</secondary_value>
+			<value>6.8370426135e+00</value>
+			<unknown_datapoints>0</unknown_datapoints>
+			</ds>
+			<ds>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>0.0000000000e+00</secondary_value>
+			<value>0.0000000000e+00</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
-			<!-- 2022-11-09 11:30:00 CST / 1668015000 --> <row><v>3.6116487222e+03</v><v>8.0421131875e+02</v><v>0.0000000000e+00</v><v>2.3323448571e+01</v><v>0.0000000000e+00</v><v>2.9079454237e+00</v><v>3.0000000000e-02</v></row>
-			<!-- 2022-11-09 11:35:00 CST / 1668015300 --> <row><v>2.3430433333e+03</v><v>3.9985333333e+02</v><v>0.0000000000e+00</v><v>1.5196666667e+01</v><v>0.0000000000e+00</v><v>2.0833333333e+00</v><v>9.3333333333e-02</v></row>
-			<!-- 2022-11-09 11:40:00 CST / 1668015600 --> <row><v>3.8685231099e+03</v><v>5.1757123047e+02</v><v>0.0000000000e+00</v><v>2.7707473780e+01</v><v>0.0000000000e+00</v><v>1.7452613183e+00</v><v>1.5740740741e-01</v></row>
-			<!-- 2022-11-09 11:45:00 CST / 1668015900 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:50:00 CST / 1668016200 --> <row><v>5.4146615121e+03</v><v>4.5599245323e+02</v><v>0.0000000000e+00</v><v>2.7031578473e+01</v><v>0.0000000000e+00</v><v>2.3948126995e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:40:00 CST / 1668008400 --> <row><v>7.5599449092e+00</v><v>1.0612175487e+01</v><v>0.0000000000e+00</v><v>6.7403698772e+00</v><v>0.0000000000e+00</v><v>7.7764006962e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:45:00 CST / 1668008700 --> <row><v>1.0167412920e+02</v><v>5.8583462498e+01</v><v>0.0000000000e+00</v><v>5.9476678540e+00</v><v>0.0000000000e+00</v><v>3.9892119380e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:50:00 CST / 1668009000 --> <row><v>6.4391428193e+02</v><v>1.8427320417e+02</v><v>0.0000000000e+00</v><v>7.6181980067e+00</v><v>0.0000000000e+00</v><v>8.4666666667e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:55:00 CST / 1668009300 --> <row><v>2.2675206860e+03</v><v>6.0771435092e+02</v><v>0.0000000000e+00</v><v>1.0191287398e+01</v><v>0.0000000000e+00</v><v>2.6190618659e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:00:00 CST / 1668009600 --> <row><v>3.6895594298e+03</v><v>1.1056547486e+03</v><v>0.0000000000e+00</v><v>1.1902045935e+01</v><v>0.0000000000e+00</v><v>3.7009381341e+00</v><v>0.0000000000e+00</v></row>
 		</database>
 	</rra>
 	<rra>
@@ -166,49 +166,159 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>2.0817256322e+02</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>1.4097993569e+02</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>0.0000000000e+00</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>5.2515389191e+00</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>0.0000000000e+00</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>5.2037594684e-01</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>NaN</primary_value>
+			<primary_value>0.0000000000e+00</primary_value>
 			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
+			<!-- 2022-11-08 10:05:00 CST / 1667923500 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:06:00 CST / 1667923560 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:07:00 CST / 1667923620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:08:00 CST / 1667923680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:09:00 CST / 1667923740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:10:00 CST / 1667923800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:11:00 CST / 1667923860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:12:00 CST / 1667923920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:13:00 CST / 1667923980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:14:00 CST / 1667924040 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:15:00 CST / 1667924100 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:16:00 CST / 1667924160 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:17:00 CST / 1667924220 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:18:00 CST / 1667924280 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:19:00 CST / 1667924340 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:20:00 CST / 1667924400 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:21:00 CST / 1667924460 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:22:00 CST / 1667924520 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:23:00 CST / 1667924580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:24:00 CST / 1667924640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:25:00 CST / 1667924700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:26:00 CST / 1667924760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:27:00 CST / 1667924820 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:28:00 CST / 1667924880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:29:00 CST / 1667924940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:30:00 CST / 1667925000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:31:00 CST / 1667925060 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:32:00 CST / 1667925120 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:33:00 CST / 1667925180 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:34:00 CST / 1667925240 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:35:00 CST / 1667925300 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:36:00 CST / 1667925360 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:37:00 CST / 1667925420 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:38:00 CST / 1667925480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:39:00 CST / 1667925540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:40:00 CST / 1667925600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:41:00 CST / 1667925660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:42:00 CST / 1667925720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:43:00 CST / 1667925780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:44:00 CST / 1667925840 --> <row><v>2.1053846154e+02</v><v>1.2092307692e+02</v><v>0.0000000000e+00</v><v>7.5767794048e+00</v><v>0.0000000000e+00</v><v>5.6408979325e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 10:45:00 CST / 1667925900 --> <row><v>9.5000000000e+01</v><v>7.2687500000e+01</v><v>0.0000000000e+00</v><v>6.9691002007e+00</v><v>0.0000000000e+00</v><v>4.3753112895e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 10:46:00 CST / 1667925960 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:47:00 CST / 1667926020 --> <row><v>9.2800000000e+00</v><v>1.3160000000e+01</v><v>0.0000000000e+00</v><v>6.8000000000e+00</v><v>0.0000000000e+00</v><v>8.0000000000e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 10:48:00 CST / 1667926080 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:49:00 CST / 1667926140 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:50:00 CST / 1667926200 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:51:00 CST / 1667926260 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:52:00 CST / 1667926320 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:53:00 CST / 1667926380 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:54:00 CST / 1667926440 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:55:00 CST / 1667926500 --> <row><v>1.4188679245e+01</v><v>1.7000000000e+01</v><v>0.0000000000e+00</v><v>1.5627561391e+00</v><v>0.0000000000e+00</v><v>1.8867924528e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 10:56:00 CST / 1667926560 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:57:00 CST / 1667926620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:58:00 CST / 1667926680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 10:59:00 CST / 1667926740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:00:00 CST / 1667926800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:01:00 CST / 1667926860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:02:00 CST / 1667926920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:03:00 CST / 1667926980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:04:00 CST / 1667927040 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:05:00 CST / 1667927100 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:06:00 CST / 1667927160 --> <row><v>4.6927500034e+00</v><v>7.2183445449e+00</v><v>0.0000000000e+00</v><v>4.1502169397e-01</v><v>0.0000000000e+00</v><v>8.6488712806e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:07:00 CST / 1667927220 --> <row><v>9.4185234282e+00</v><v>1.1942796278e+01</v><v>0.0000000000e+00</v><v>2.4428446932e-01</v><v>0.0000000000e+00</v><v>8.1428156440e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:08:00 CST / 1667927280 --> <row><v>1.3951505492e+02</v><v>8.5515568754e+01</v><v>0.0000000000e+00</v><v>2.5782188634e+00</v><v>0.0000000000e+00</v><v>3.8802535017e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:09:00 CST / 1667927340 --> <row><v>1.9363525812e+01</v><v>1.7477876559e+01</v><v>0.0000000000e+00</v><v>5.3995637301e+00</v><v>0.0000000000e+00</v><v>1.3234662545e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:10:00 CST / 1667927400 --> <row><v>1.4841908974e+01</v><v>1.8775003554e+01</v><v>0.0000000000e+00</v><v>2.9415126748e+00</v><v>0.0000000000e+00</v><v>1.9905696386e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:11:00 CST / 1667927460 --> <row><v>3.9182475769e+02</v><v>2.5259166311e+02</v><v>0.0000000000e+00</v><v>3.5464484439e+00</v><v>0.0000000000e+00</v><v>8.3427636947e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:12:00 CST / 1667927520 --> <row><v>8.2127659574e+00</v><v>1.2170212766e+01</v><v>0.0000000000e+00</v><v>6.6749432527e+00</v><v>0.0000000000e+00</v><v>8.2978723404e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:13:00 CST / 1667927580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:14:00 CST / 1667927640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:15:00 CST / 1667927700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:16:00 CST / 1667927760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:17:00 CST / 1667927820 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:18:00 CST / 1667927880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:19:00 CST / 1667927940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:20:00 CST / 1667928000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:21:00 CST / 1667928060 --> <row><v>4.3139169995e+00</v><v>6.8073628239e+00</v><v>0.0000000000e+00</v><v>4.1968460087e+00</v><v>0.0000000000e+00</v><v>7.1448194147e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:22:00 CST / 1667928120 --> <row><v>1.0008444277e+01</v><v>1.4331463402e+01</v><v>0.0000000000e+00</v><v>6.8120301363e-01</v><v>0.0000000000e+00</v><v>1.4410063750e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:23:00 CST / 1667928180 --> <row><v>1.4446097206e+02</v><v>8.3227840440e+01</v><v>0.0000000000e+00</v><v>7.9366271811e+00</v><v>0.0000000000e+00</v><v>3.3445116835e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:24:00 CST / 1667928240 --> <row><v>1.9567723265e+01</v><v>3.0301691576e+01</v><v>0.0000000000e+00</v><v>1.5473118922e+00</v><v>0.0000000000e+00</v><v>2.0664533099e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:25:00 CST / 1667928300 --> <row><v>2.1465610068e+01</v><v>3.1064975090e+01</v><v>0.0000000000e+00</v><v>1.1280251665e+00</v><v>0.0000000000e+00</v><v>2.2668800234e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:26:00 CST / 1667928360 --> <row><v>1.2133333333e+01</v><v>1.9750000000e+01</v><v>0.0000000000e+00</v><v>7.8059134054e+00</v><v>0.0000000000e+00</v><v>1.8333333333e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:27:00 CST / 1667928420 --> <row><v>4.3478260870e+00</v><v>7.8695652174e+00</v><v>0.0000000000e+00</v><v>8.0106260848e+00</v><v>0.0000000000e+00</v><v>8.6956521739e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:28:00 CST / 1667928480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:29:00 CST / 1667928540 --> <row><v>2.0540540541e+01</v><v>3.3621621622e+01</v><v>0.0000000000e+00</v><v>7.0270270270e+00</v><v>0.0000000000e+00</v><v>2.1621621622e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:30:00 CST / 1667928600 --> <row><v>2.1000000000e+01</v><v>2.8466666667e+01</v><v>0.0000000000e+00</v><v>7.8666666667e+00</v><v>0.0000000000e+00</v><v>2.0000000000e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:31:00 CST / 1667928660 --> <row><v>6.1000000000e+00</v><v>1.0283333333e+01</v><v>0.0000000000e+00</v><v>7.7666666667e+00</v><v>0.0000000000e+00</v><v>1.1666666667e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:32:00 CST / 1667928720 --> <row><v>3.1555555556e+01</v><v>3.1944444444e+01</v><v>0.0000000000e+00</v><v>7.3333333333e+00</v><v>0.0000000000e+00</v><v>3.8888888889e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:33:00 CST / 1667928780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:34:00 CST / 1667928840 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:35:00 CST / 1667928900 --> <row><v>1.9914893617e+01</v><v>2.0234042553e+01</v><v>0.0000000000e+00</v><v>8.2553191489e+00</v><v>0.0000000000e+00</v><v>2.1276595745e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:36:00 CST / 1667928960 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:37:00 CST / 1667929020 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:38:00 CST / 1667929080 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:39:00 CST / 1667929140 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:40:00 CST / 1667929200 --> <row><v>1.6371601251e+02</v><v>1.7853532491e+02</v><v>0.0000000000e+00</v><v>7.8548480686e+00</v><v>0.0000000000e+00</v><v>6.9504880376e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:41:00 CST / 1667929260 --> <row><v>3.4773333333e+02</v><v>1.4716666667e+02</v><v>0.0000000000e+00</v><v>3.5951519314e+00</v><v>0.0000000000e+00</v><v>7.2161786291e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:42:00 CST / 1667929320 --> <row><v>1.3350000000e+01</v><v>2.1850000000e+01</v><v>0.0000000000e+00</v><v>6.4500000000e+00</v><v>0.0000000000e+00</v><v>2.5000000000e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 11:43:00 CST / 1667929380 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:44:00 CST / 1667929440 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:45:00 CST / 1667929500 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:46:00 CST / 1667929560 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:47:00 CST / 1667929620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:48:00 CST / 1667929680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:49:00 CST / 1667929740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:50:00 CST / 1667929800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:51:00 CST / 1667929860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:52:00 CST / 1667929920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:53:00 CST / 1667929980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 11:54:00 CST / 1667930040 --> <row><v>3.7692235610e+02</v><v>1.4297368421e+02</v><v>0.0000000000e+00</v><v>1.1578947368e+01</v><v>0.0000000000e+00</v><v>5.2631578947e-02</v><v>0.0000000000e+00</v></row>
 			<!-- 2022-11-08 11:55:00 CST / 1667930100 --> <row><v>1.9516529078e+02</v><v>6.9888888889e+01</v><v>0.0000000000e+00</v><v>1.0194444444e+01</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
 			<!-- 2022-11-08 11:56:00 CST / 1667930160 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 11:57:00 CST / 1667930220 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
@@ -496,28 +606,28 @@
 			<!-- 2022-11-08 16:39:00 CST / 1667947140 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 16:40:00 CST / 1667947200 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 16:41:00 CST / 1667947260 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-08 16:42:00 CST / 1667947320 --> <row><v>2.0423205146e+04</v><v>2.0756074543e+03</v><v>0.0000000000e+00</v><v>2.5520306426e+01</v><v>0.0000000000e+00</v><v>7.7636795607e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:43:00 CST / 1667947380 --> <row><v>3.3312450468e+04</v><v>7.8051762402e+03</v><v>0.0000000000e+00</v><v>5.5107062657e+01</v><v>0.0000000000e+00</v><v>1.0892083055e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:44:00 CST / 1667947440 --> <row><v>2.0198895695e+03</v><v>1.8000675550e+03</v><v>0.0000000000e+00</v><v>1.2500000000e+01</v><v>0.0000000000e+00</v><v>2.5833333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:45:00 CST / 1667947500 --> <row><v>1.0511035821e+05</v><v>8.9305783272e+03</v><v>0.0000000000e+00</v><v>9.6353941520e+01</v><v>0.0000000000e+00</v><v>3.5633631933e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:46:00 CST / 1667947560 --> <row><v>1.9493639424e+03</v><v>3.2249570278e+03</v><v>0.0000000000e+00</v><v>2.1512725146e+01</v><v>0.0000000000e+00</v><v>1.3997014000e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:47:00 CST / 1667947620 --> <row><v>5.6634180284e+04</v><v>7.5244852296e+03</v><v>0.0000000000e+00</v><v>6.4766666667e+01</v><v>0.0000000000e+00</v><v>2.2716666667e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:48:00 CST / 1667947680 --> <row><v>1.2211601787e+04</v><v>5.1101648501e+03</v><v>0.0000000000e+00</v><v>3.2923045337e+01</v><v>0.0000000000e+00</v><v>6.2747179369e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:49:00 CST / 1667947740 --> <row><v>3.0253931501e+04</v><v>4.3075744115e+03</v><v>0.0000000000e+00</v><v>3.4161629567e+01</v><v>0.0000000000e+00</v><v>1.4325844657e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:50:00 CST / 1667947800 --> <row><v>4.3565310609e+03</v><v>5.5111924049e+03</v><v>0.0000000000e+00</v><v>2.8245597704e+01</v><v>0.0000000000e+00</v><v>2.3086565739e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:51:00 CST / 1667947860 --> <row><v>1.0394681659e+05</v><v>6.1694301457e+03</v><v>0.0000000000e+00</v><v>8.8036394059e+01</v><v>0.0000000000e+00</v><v>3.2874114165e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:52:00 CST / 1667947920 --> <row><v>3.6682460087e+03</v><v>6.1465468887e+03</v><v>0.0000000000e+00</v><v>2.8896826342e+01</v><v>0.0000000000e+00</v><v>1.8249792513e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:53:00 CST / 1667947980 --> <row><v>5.5116068356e+04</v><v>4.5387264563e+03</v><v>0.0000000000e+00</v><v>5.6953173658e+01</v><v>0.0000000000e+00</v><v>2.0958354082e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:54:00 CST / 1667948040 --> <row><v>3.5920540441e+03</v><v>5.7569494638e+03</v><v>0.0000000000e+00</v><v>2.8283784897e+01</v><v>0.0000000000e+00</v><v>1.6270680951e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:55:00 CST / 1667948100 --> <row><v>1.8035059097e+03</v><v>1.6888062858e+03</v><v>0.0000000000e+00</v><v>1.6116215103e+01</v><v>0.0000000000e+00</v><v>1.8729319049e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 16:56:00 CST / 1667948160 --> <row><v>4.6198568423e+04</v><v>7.9971543224e+03</v><v>0.0000000000e+00</v><v>6.2745454545e+01</v><v>0.0000000000e+00</v><v>1.6872727273e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 16:42:00 CST / 1667947320 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:43:00 CST / 1667947380 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:44:00 CST / 1667947440 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:45:00 CST / 1667947500 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:46:00 CST / 1667947560 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:47:00 CST / 1667947620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:48:00 CST / 1667947680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:49:00 CST / 1667947740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:50:00 CST / 1667947800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:51:00 CST / 1667947860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:52:00 CST / 1667947920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:53:00 CST / 1667947980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:54:00 CST / 1667948040 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:55:00 CST / 1667948100 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 16:56:00 CST / 1667948160 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 16:57:00 CST / 1667948220 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 16:58:00 CST / 1667948280 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 16:59:00 CST / 1667948340 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:00:00 CST / 1667948400 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-08 17:01:00 CST / 1667948460 --> <row><v>1.0915643928e+03</v><v>2.3344953747e+02</v><v>0.0000000000e+00</v><v>1.0448581545e+01</v><v>0.0000000000e+00</v><v>1.6533260076e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:02:00 CST / 1667948520 --> <row><v>1.5003099823e+02</v><v>1.0550948273e+02</v><v>0.0000000000e+00</v><v>8.5768026112e+00</v><v>0.0000000000e+00</v><v>1.0702272281e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:03:00 CST / 1667948580 --> <row><v>5.1000000000e+01</v><v>3.9111111111e+01</v><v>0.0000000000e+00</v><v>5.2222222222e+00</v><v>0.0000000000e+00</v><v>2.2222222222e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 17:01:00 CST / 1667948460 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:02:00 CST / 1667948520 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:03:00 CST / 1667948580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:04:00 CST / 1667948640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:05:00 CST / 1667948700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:06:00 CST / 1667948760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
@@ -525,18 +635,18 @@
 			<!-- 2022-11-08 17:08:00 CST / 1667948880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:09:00 CST / 1667948940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:10:00 CST / 1667949000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-08 17:11:00 CST / 1667949060 --> <row><v>2.1183742152e+04</v><v>3.2884980813e+02</v><v>0.0000000000e+00</v><v>2.1542185997e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:12:00 CST / 1667949120 --> <row><v>1.1962830600e+04</v><v>1.0060835105e+03</v><v>0.0000000000e+00</v><v>1.2041831126e+01</v><v>0.0000000000e+00</v><v>4.4093546159e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:13:00 CST / 1667949180 --> <row><v>1.8804158502e+03</v><v>1.5252333481e+03</v><v>0.0000000000e+00</v><v>8.9372836073e+00</v><v>0.0000000000e+00</v><v>8.7397871739e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:14:00 CST / 1667949240 --> <row><v>1.4406743236e+04</v><v>3.3789335751e+03</v><v>0.0000000000e+00</v><v>2.7050000000e+01</v><v>0.0000000000e+00</v><v>1.6633333333e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:15:00 CST / 1667949300 --> <row><v>1.0849567635e+03</v><v>6.8509975827e+02</v><v>0.0000000000e+00</v><v>9.5333333333e+00</v><v>0.0000000000e+00</v><v>2.2333333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:16:00 CST / 1667949360 --> <row><v>1.5773333333e+02</v><v>3.4792410468e+01</v><v>0.0000000000e+00</v><v>7.6166666667e+00</v><v>0.0000000000e+00</v><v>5.0000000000e-02</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:17:00 CST / 1667949420 --> <row><v>8.8217142857e+02</v><v>4.3995586777e+02</v><v>0.0000000000e+00</v><v>7.3714285714e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 17:11:00 CST / 1667949060 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:12:00 CST / 1667949120 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:13:00 CST / 1667949180 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:14:00 CST / 1667949240 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:15:00 CST / 1667949300 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:16:00 CST / 1667949360 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:17:00 CST / 1667949420 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:18:00 CST / 1667949480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:19:00 CST / 1667949540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-08 17:20:00 CST / 1667949600 --> <row><v>2.7085551715e+05</v><v>1.3112493802e+04</v><v>0.0000000000e+00</v><v>2.0226806047e+02</v><v>0.0000000000e+00</v><v>1.1152904130e+02</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:21:00 CST / 1667949660 --> <row><v>5.2514801475e+02</v><v>2.7314790824e+02</v><v>0.0000000000e+00</v><v>9.4539126431e+00</v><v>0.0000000000e+00</v><v>2.1779418714e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-08 17:22:00 CST / 1667949720 --> <row><v>1.0687719298e+03</v><v>3.5332367959e+03</v><v>0.0000000000e+00</v><v>1.2187396720e+01</v><v>0.0000000000e+00</v><v>5.1856317514e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-08 17:20:00 CST / 1667949600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:21:00 CST / 1667949660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-08 17:22:00 CST / 1667949720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:23:00 CST / 1667949780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:24:00 CST / 1667949840 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-08 17:25:00 CST / 1667949900 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
@@ -1469,28 +1579,28 @@
 			<!-- 2022-11-09 08:52:00 CST / 1668005520 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 08:53:00 CST / 1668005580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 08:54:00 CST / 1668005640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 08:55:00 CST / 1668005700 --> <row><v>3.9170834780e+02</v><v>4.3580519031e+02</v><v>0.0000000000e+00</v><v>3.7773441763e+00</v><v>0.0000000000e+00</v><v>9.0935057372e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 08:56:00 CST / 1668005760 --> <row><v>7.7021387828e+02</v><v>2.5690952711e+02</v><v>0.0000000000e+00</v><v>6.7664226325e+00</v><v>0.0000000000e+00</v><v>8.3733331301e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 08:57:00 CST / 1668005820 --> <row><v>9.5511666667e+02</v><v>3.7215000000e+02</v><v>0.0000000000e+00</v><v>1.2207637757e+01</v><v>0.0000000000e+00</v><v>1.5692323413e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 08:58:00 CST / 1668005880 --> <row><v>8.3250000000e+01</v><v>5.5216666667e+01</v><v>0.0000000000e+00</v><v>1.3923488766e+01</v><v>0.0000000000e+00</v><v>4.7496595133e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 08:59:00 CST / 1668005940 --> <row><v>2.4108333333e+02</v><v>1.3608333333e+02</v><v>0.0000000000e+00</v><v>1.0049065115e+01</v><v>0.0000000000e+00</v><v>8.3494464029e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:00:00 CST / 1668006000 --> <row><v>5.1150000000e+01</v><v>2.6883333333e+01</v><v>0.0000000000e+00</v><v>1.2448933330e+01</v><v>0.0000000000e+00</v><v>3.3946956514e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:01:00 CST / 1668006060 --> <row><v>3.6398833333e+03</v><v>1.3165666667e+03</v><v>0.0000000000e+00</v><v>2.2434400004e+01</v><v>0.0000000000e+00</v><v>5.7438637682e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:02:00 CST / 1668006120 --> <row><v>5.5578333333e+02</v><v>2.7011666667e+02</v><v>0.0000000000e+00</v><v>1.2566666667e+01</v><v>0.0000000000e+00</v><v>9.0000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:03:00 CST / 1668006180 --> <row><v>5.4570000000e+02</v><v>3.6533333333e+01</v><v>0.0000000000e+00</v><v>1.5400000000e+01</v><v>0.0000000000e+00</v><v>3.5000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:04:00 CST / 1668006240 --> <row><v>2.0048233530e+02</v><v>5.9555143812e+01</v><v>0.0000000000e+00</v><v>1.5533285013e+01</v><v>0.0000000000e+00</v><v>4.9401806261e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:05:00 CST / 1668006300 --> <row><v>9.6248433137e+02</v><v>5.3379485619e+02</v><v>0.0000000000e+00</v><v>1.0200048320e+01</v><v>0.0000000000e+00</v><v>1.5226486041e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:06:00 CST / 1668006360 --> <row><v>1.0331666667e+02</v><v>5.4116666667e+01</v><v>0.0000000000e+00</v><v>8.7000000000e+00</v><v>0.0000000000e+00</v><v>3.6666666667e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:07:00 CST / 1668006420 --> <row><v>2.2501666667e+02</v><v>1.7660000000e+02</v><v>0.0000000000e+00</v><v>1.0383333333e+01</v><v>0.0000000000e+00</v><v>6.3333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:08:00 CST / 1668006480 --> <row><v>5.3880000000e+02</v><v>1.8516666667e+02</v><v>0.0000000000e+00</v><v>1.4383333333e+01</v><v>0.0000000000e+00</v><v>3.3333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:09:00 CST / 1668006540 --> <row><v>2.2008333333e+02</v><v>9.3331311066e+02</v><v>0.0000000000e+00</v><v>1.9183333333e+01</v><v>0.0000000000e+00</v><v>9.5000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:10:00 CST / 1668006600 --> <row><v>2.8136143922e+02</v><v>4.8336564120e+02</v><v>0.0000000000e+00</v><v>1.4753953831e+01</v><v>0.0000000000e+00</v><v>5.1155269115e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:11:00 CST / 1668006660 --> <row><v>1.5184001239e+02</v><v>1.3659656596e+02</v><v>0.0000000000e+00</v><v>3.8356304399e+00</v><v>0.0000000000e+00</v><v>1.6984341431e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:12:00 CST / 1668006720 --> <row><v>2.0366521505e+02</v><v>2.2244134885e+02</v><v>0.0000000000e+00</v><v>1.1076932618e+01</v><v>0.0000000000e+00</v><v>2.3527056121e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:13:00 CST / 1668006780 --> <row><v>9.4454029164e+01</v><v>8.2983333333e+01</v><v>0.0000000000e+00</v><v>6.0004974245e+00</v><v>0.0000000000e+00</v><v>6.6666666667e-02</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:14:00 CST / 1668006840 --> <row><v>3.8979304169e+01</v><v>4.2866666667e+01</v><v>0.0000000000e+00</v><v>8.6223546272e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:15:00 CST / 1668006900 --> <row><v>1.9599979549e+02</v><v>2.2267496486e+02</v><v>0.0000000000e+00</v><v>1.5150552741e+01</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 09:16:00 CST / 1668006960 --> <row><v>1.4248577272e+03</v><v>1.6616905766e+03</v><v>0.0000000000e+00</v><v>4.4457366624e+01</v><v>0.0000000000e+00</v><v>4.7619047619e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 08:55:00 CST / 1668005700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 08:56:00 CST / 1668005760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 08:57:00 CST / 1668005820 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 08:58:00 CST / 1668005880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 08:59:00 CST / 1668005940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:00:00 CST / 1668006000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:01:00 CST / 1668006060 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:02:00 CST / 1668006120 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:03:00 CST / 1668006180 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:04:00 CST / 1668006240 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:05:00 CST / 1668006300 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:06:00 CST / 1668006360 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:07:00 CST / 1668006420 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:08:00 CST / 1668006480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:09:00 CST / 1668006540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:10:00 CST / 1668006600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:11:00 CST / 1668006660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:12:00 CST / 1668006720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:13:00 CST / 1668006780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:14:00 CST / 1668006840 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:15:00 CST / 1668006900 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:16:00 CST / 1668006960 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:17:00 CST / 1668007020 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:18:00 CST / 1668007080 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:19:00 CST / 1668007140 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
@@ -1504,151 +1614,41 @@
 			<!-- 2022-11-09 09:27:00 CST / 1668007620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:28:00 CST / 1668007680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:29:00 CST / 1668007740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:30:00 CST / 1668007800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:31:00 CST / 1668007860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:32:00 CST / 1668007920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:33:00 CST / 1668007980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:34:00 CST / 1668008040 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:35:00 CST / 1668008100 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:36:00 CST / 1668008160 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:37:00 CST / 1668008220 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:30:00 CST / 1668007800 --> <row><v>2.2429824901e+02</v><v>1.1697688943e+02</v><v>0.0000000000e+00</v><v>6.7048255898e+00</v><v>0.0000000000e+00</v><v>8.2097956754e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:31:00 CST / 1668007860 --> <row><v>5.3862396074e+02</v><v>2.3693372632e+02</v><v>0.0000000000e+00</v><v>4.4448364547e+00</v><v>0.0000000000e+00</v><v>1.4425323519e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:32:00 CST / 1668007920 --> <row><v>1.5514445691e+02</v><v>1.0688938425e+02</v><v>0.0000000000e+00</v><v>6.0372066109e+00</v><v>0.0000000000e+00</v><v>8.5315474725e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:33:00 CST / 1668007980 --> <row><v>3.2383333333e+01</v><v>5.0483333333e+01</v><v>0.0000000000e+00</v><v>8.0242137611e+00</v><v>0.0000000000e+00</v><v>5.5858455967e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:34:00 CST / 1668008040 --> <row><v>4.9233333333e+01</v><v>6.3800000000e+01</v><v>0.0000000000e+00</v><v>8.1120656021e+00</v><v>0.0000000000e+00</v><v>4.2474877366e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:35:00 CST / 1668008100 --> <row><v>3.0389723245e+01</v><v>8.2489153389e+01</v><v>0.0000000000e+00</v><v>6.5095326687e+00</v><v>0.0000000000e+00</v><v>3.2320280413e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:36:00 CST / 1668008160 --> <row><v>1.2057320082e+01</v><v>1.4856521451e+01</v><v>0.0000000000e+00</v><v>4.5173193127e+00</v><v>0.0000000000e+00</v><v>1.4346386253e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:37:00 CST / 1668008220 --> <row><v>1.7177400409e+00</v><v>1.9259509549e+00</v><v>0.0000000000e+00</v><v>8.4000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v><v>0.0000000000e+00</v></row>
 			<!-- 2022-11-09 09:38:00 CST / 1668008280 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
 			<!-- 2022-11-09 09:39:00 CST / 1668008340 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:40:00 CST / 1668008400 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:41:00 CST / 1668008460 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:42:00 CST / 1668008520 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:43:00 CST / 1668008580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:44:00 CST / 1668008640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:45:00 CST / 1668008700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:46:00 CST / 1668008760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:47:00 CST / 1668008820 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:48:00 CST / 1668008880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:49:00 CST / 1668008940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:50:00 CST / 1668009000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:51:00 CST / 1668009060 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:52:00 CST / 1668009120 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:53:00 CST / 1668009180 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:54:00 CST / 1668009240 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:55:00 CST / 1668009300 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:56:00 CST / 1668009360 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:57:00 CST / 1668009420 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:58:00 CST / 1668009480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 09:59:00 CST / 1668009540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:00:00 CST / 1668009600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:01:00 CST / 1668009660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:02:00 CST / 1668009720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:03:00 CST / 1668009780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:04:00 CST / 1668009840 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:05:00 CST / 1668009900 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:06:00 CST / 1668009960 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:07:00 CST / 1668010020 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:08:00 CST / 1668010080 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:09:00 CST / 1668010140 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:10:00 CST / 1668010200 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:11:00 CST / 1668010260 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:12:00 CST / 1668010320 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:13:00 CST / 1668010380 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:14:00 CST / 1668010440 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:15:00 CST / 1668010500 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:16:00 CST / 1668010560 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:17:00 CST / 1668010620 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:18:00 CST / 1668010680 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:19:00 CST / 1668010740 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:20:00 CST / 1668010800 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:21:00 CST / 1668010860 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:22:00 CST / 1668010920 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:23:00 CST / 1668010980 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:24:00 CST / 1668011040 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:25:00 CST / 1668011100 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:26:00 CST / 1668011160 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:27:00 CST / 1668011220 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:28:00 CST / 1668011280 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:29:00 CST / 1668011340 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:30:00 CST / 1668011400 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:31:00 CST / 1668011460 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:32:00 CST / 1668011520 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:33:00 CST / 1668011580 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:34:00 CST / 1668011640 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:35:00 CST / 1668011700 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:36:00 CST / 1668011760 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:37:00 CST / 1668011820 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:38:00 CST / 1668011880 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:39:00 CST / 1668011940 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:40:00 CST / 1668012000 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:41:00 CST / 1668012060 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:42:00 CST / 1668012120 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:43:00 CST / 1668012180 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:44:00 CST / 1668012240 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:45:00 CST / 1668012300 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:46:00 CST / 1668012360 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:47:00 CST / 1668012420 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:48:00 CST / 1668012480 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:49:00 CST / 1668012540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:50:00 CST / 1668012600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:51:00 CST / 1668012660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:52:00 CST / 1668012720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 10:53:00 CST / 1668012780 --> <row><v>1.0262220514e+03</v><v>1.0031617044e+02</v><v>0.0000000000e+00</v><v>1.2073355563e+01</v><v>0.0000000000e+00</v><v>4.9272439424e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:54:00 CST / 1668012840 --> <row><v>4.3506946153e+03</v><v>7.7083382956e+02</v><v>0.0000000000e+00</v><v>2.1801326008e+01</v><v>0.0000000000e+00</v><v>6.3141790870e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:55:00 CST / 1668012900 --> <row><v>3.6686683333e+04</v><v>3.8373333333e+03</v><v>0.0000000000e+00</v><v>5.4183333333e+01</v><v>0.0000000000e+00</v><v>2.3250000000e+01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:56:00 CST / 1668012960 --> <row><v>5.8235000000e+03</v><v>3.8808333333e+02</v><v>0.0000000000e+00</v><v>3.0650000000e+01</v><v>0.0000000000e+00</v><v>2.1666666667e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:57:00 CST / 1668013020 --> <row><v>5.9133655251e+03</v><v>3.7865181192e+02</v><v>0.0000000000e+00</v><v>2.7951820287e+01</v><v>0.0000000000e+00</v><v>2.2594178196e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:58:00 CST / 1668013080 --> <row><v>1.1706178082e+03</v><v>3.8714854744e+01</v><v>0.0000000000e+00</v><v>9.9148463796e+00</v><v>0.0000000000e+00</v><v>3.7391551376e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 10:59:00 CST / 1668013140 --> <row><v>1.0408660685e+03</v><v>7.2420105894e+01</v><v>0.0000000000e+00</v><v>9.5693935434e+00</v><v>0.0000000000e+00</v><v>5.9284592138e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:00:00 CST / 1668013200 --> <row><v>1.2866505982e+03</v><v>2.5263227440e+01</v><v>0.0000000000e+00</v><v>1.2980606457e+01</v><v>0.0000000000e+00</v><v>2.2382074528e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:01:00 CST / 1668013260 --> <row><v>9.8893956094e+02</v><v>1.0223333333e+02</v><v>0.0000000000e+00</v><v>1.1862203529e+01</v><v>0.0000000000e+00</v><v>4.8333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:02:00 CST / 1668013320 --> <row><v>1.8828104391e+03</v><v>3.2583333333e+01</v><v>0.0000000000e+00</v><v>1.4121129804e+01</v><v>0.0000000000e+00</v><v>1.8333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:03:00 CST / 1668013380 --> <row><v>2.2240166667e+03</v><v>8.6018333333e+02</v><v>0.0000000000e+00</v><v>1.5816666667e+01</v><v>0.0000000000e+00</v><v>2.2833333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:04:00 CST / 1668013440 --> <row><v>7.4650000000e+02</v><v>2.6833333333e+01</v><v>0.0000000000e+00</v><v>1.1550000000e+01</v><v>0.0000000000e+00</v><v>2.5000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:05:00 CST / 1668013500 --> <row><v>1.6289166667e+03</v><v>1.1110000000e+02</v><v>0.0000000000e+00</v><v>1.4933333333e+01</v><v>0.0000000000e+00</v><v>6.0000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:06:00 CST / 1668013560 --> <row><v>1.4318833333e+03</v><v>7.0025000000e+02</v><v>0.0000000000e+00</v><v>1.3233333333e+01</v><v>0.0000000000e+00</v><v>1.8500000000e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:07:00 CST / 1668013620 --> <row><v>1.3339310409e+03</v><v>3.1310881486e+01</v><v>0.0000000000e+00</v><v>1.1578232914e+01</v><v>0.0000000000e+00</v><v>1.8214382362e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:08:00 CST / 1668013680 --> <row><v>3.5327022924e+03</v><v>2.4917245185e+02</v><v>0.0000000000e+00</v><v>2.4389402477e+01</v><v>0.0000000000e+00</v><v>8.6220289203e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:09:00 CST / 1668013740 --> <row><v>2.6224695371e+03</v><v>3.8366666667e+01</v><v>0.0000000000e+00</v><v>1.9615697942e+01</v><v>0.0000000000e+00</v><v>2.8898661768e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:10:00 CST / 1668013800 --> <row><v>1.9638771370e+03</v><v>4.7667742689e+02</v><v>0.0000000000e+00</v><v>1.3715362186e+01</v><v>0.0000000000e+00</v><v>1.6338539891e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:11:00 CST / 1668013860 --> <row><v>1.9955764895e+03</v><v>4.8870965933e+01</v><v>0.0000000000e+00</v><v>1.7518371099e+01</v><v>0.0000000000e+00</v><v>3.9869322407e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:12:00 CST / 1668013920 --> <row><v>8.3003184692e+03</v><v>1.0067507419e+03</v><v>0.0000000000e+00</v><v>3.8226761018e+01</v><v>0.0000000000e+00</v><v>3.7817450026e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:13:00 CST / 1668013980 --> <row><v>5.4990843360e+03</v><v>5.7558919171e+02</v><v>0.0000000000e+00</v><v>2.9156172364e+01</v><v>0.0000000000e+00</v><v>4.0023744509e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:14:00 CST / 1668014040 --> <row><v>5.0910938073e+03</v><v>6.5698551788e+02</v><v>0.0000000000e+00</v><v>2.6536601322e+01</v><v>0.0000000000e+00</v><v>2.1120781146e+00</v><v>1.5948753920e-01</v></row>
-			<!-- 2022-11-09 11:15:00 CST / 1668014100 --> <row><v>5.0910938073e+03</v><v>6.5698551788e+02</v><v>0.0000000000e+00</v><v>2.6536601322e+01</v><v>0.0000000000e+00</v><v>2.1120781146e+00</v><v>1.5948753920e-01</v></row>
-			<!-- 2022-11-09 11:16:00 CST / 1668014160 --> <row><v>3.7094748079e+03</v><v>7.2722533968e+02</v><v>0.0000000000e+00</v><v>2.2857419927e+01</v><v>0.0000000000e+00</v><v>2.6229308728e+00</v><v>1.7325470184e-01</v></row>
-			<!-- 2022-11-09 11:17:00 CST / 1668014220 --> <row><v>2.4907752262e+03</v><v>6.3688212215e+02</v><v>0.0000000000e+00</v><v>1.6094400003e+01</v><v>0.0000000000e+00</v><v>1.8114020716e+00</v><v>9.1103553093e-02</v></row>
-			<!-- 2022-11-09 11:18:00 CST / 1668014280 --> <row><v>3.7371904454e+03</v><v>9.8553325734e+02</v><v>0.0000000000e+00</v><v>1.9526079309e+01</v><v>0.0000000000e+00</v><v>4.1809220262e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:19:00 CST / 1668014340 --> <row><v>4.5316634891e+03</v><v>1.8664021464e+03</v><v>0.0000000000e+00</v><v>2.6519160513e+01</v><v>0.0000000000e+00</v><v>3.6036417813e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:20:00 CST / 1668014400 --> <row><v>6.7255205078e+03</v><v>9.4742012798e+02</v><v>0.0000000000e+00</v><v>3.6142771422e+01</v><v>0.0000000000e+00</v><v>3.9371852232e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:21:00 CST / 1668014460 --> <row><v>7.5667119401e+03</v><v>1.3179431093e+02</v><v>0.0000000000e+00</v><v>3.8020299516e+01</v><v>0.0000000000e+00</v><v>1.0697617956e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:22:00 CST / 1668014520 --> <row><v>5.6306657206e+03</v><v>6.9399055451e+02</v><v>0.0000000000e+00</v><v>3.4866666667e+01</v><v>0.0000000000e+00</v><v>2.0333333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:23:00 CST / 1668014580 --> <row><v>2.0390342794e+03</v><v>1.6275944549e+02</v><v>0.0000000000e+00</v><v>1.5868128160e+01</v><v>0.0000000000e+00</v><v>6.8333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:24:00 CST / 1668014640 --> <row><v>3.2126730947e+03</v><v>5.5837523888e+02</v><v>0.0000000000e+00</v><v>1.9165205173e+01</v><v>0.0000000000e+00</v><v>2.9833333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:25:00 CST / 1668014700 --> <row><v>3.5769332943e+03</v><v>3.4983483406e+02</v><v>0.0000000000e+00</v><v>2.4566090479e+01</v><v>0.0000000000e+00</v><v>1.5936062151e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:26:00 CST / 1668014760 --> <row><v>3.5300409340e+03</v><v>9.5199305465e+02</v><v>0.0000000000e+00</v><v>1.8000576187e+01</v><v>0.0000000000e+00</v><v>5.8730604516e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:27:00 CST / 1668014820 --> <row><v>2.6476102913e+03</v><v>1.5936148672e+03</v><v>0.0000000000e+00</v><v>2.1866666667e+01</v><v>0.0000000000e+00</v><v>4.3333333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:28:00 CST / 1668014880 --> <row><v>3.6852828335e+03</v><v>1.4216839219e+02</v><v>0.0000000000e+00</v><v>2.5016666667e+01</v><v>0.0000000000e+00</v><v>7.8333333333e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:29:00 CST / 1668014940 --> <row><v>5.5127757684e+03</v><v>9.7846361298e+02</v><v>0.0000000000e+00</v><v>3.1666666667e+01</v><v>0.0000000000e+00</v><v>2.4833333333e+00</v><v>1.5000000000e-01</v></row>
-			<!-- 2022-11-09 11:30:00 CST / 1668015000 --> <row><v>2.6825337838e+03</v><v>3.5481666667e+02</v><v>0.0000000000e+00</v><v>2.0066666667e+01</v><v>0.0000000000e+00</v><v>1.0666666667e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:31:00 CST / 1668015060 --> <row><v>1.4757840871e+03</v><v>1.2178404186e+02</v><v>0.0000000000e+00</v><v>1.0761220758e+01</v><v>0.0000000000e+00</v><v>7.6291903909e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:32:00 CST / 1668015120 --> <row><v>4.6648952835e+03</v><v>5.9147115018e+02</v><v>0.0000000000e+00</v><v>2.3955989740e+01</v><v>0.0000000000e+00</v><v>3.1871194395e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:33:00 CST / 1668015180 --> <row><v>3.5115111079e+03</v><v>6.8163939100e+02</v><v>0.0000000000e+00</v><v>1.6130628995e+01</v><v>0.0000000000e+00</v><v>4.3188275162e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:34:00 CST / 1668015240 --> <row><v>1.0302370998e+03</v><v>3.3954241737e+02</v><v>0.0000000000e+00</v><v>9.2856828112e+00</v><v>0.0000000000e+00</v><v>8.3719369930e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:35:00 CST / 1668015300 --> <row><v>1.0327890884e+03</v><v>2.6482966625e+02</v><v>0.0000000000e+00</v><v>1.5849811030e+01</v><v>0.0000000000e+00</v><v>1.3106069726e+00</v><v>4.6666666667e-01</v></row>
-			<!-- 2022-11-09 11:36:00 CST / 1668015360 --> <row><v>3.5561500000e+03</v><v>1.1025500000e+03</v><v>0.0000000000e+00</v><v>2.1483333333e+01</v><v>0.0000000000e+00</v><v>3.2833333333e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:37:00 CST / 1668015420 --> <row><v>2.9937460056e+03</v><v>2.7958779623e+02</v><v>0.0000000000e+00</v><v>2.1124701325e+01</v><v>0.0000000000e+00</v><v>6.5465740102e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:38:00 CST / 1668015480 --> <row><v>5.0556733240e+03</v><v>1.7057589517e+02</v><v>0.0000000000e+00</v><v>4.0514386681e+01</v><v>0.0000000000e+00</v><v>1.2977932205e+00</v><v>4.7222222222e-01</v></row>
-			<!-- 2022-11-09 11:39:00 CST / 1668015540 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:40:00 CST / 1668015600 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:41:00 CST / 1668015660 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:42:00 CST / 1668015720 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:43:00 CST / 1668015780 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:44:00 CST / 1668015840 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:45:00 CST / 1668015900 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:46:00 CST / 1668015960 --> <row><v>4.4398307305e+03</v><v>1.3587349911e+02</v><v>0.0000000000e+00</v><v>2.6748901970e+01</v><v>0.0000000000e+00</v><v>6.2925079811e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:47:00 CST / 1668016020 --> <row><v>7.4059215551e+03</v><v>1.7271165402e+02</v><v>0.0000000000e+00</v><v>3.3578467267e+01</v><v>0.0000000000e+00</v><v>1.1868055240e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:48:00 CST / 1668016080 --> <row><v>9.6188104012e+03</v><v>1.4799401972e+03</v><v>0.0000000000e+00</v><v>4.5374035770e+01</v><v>0.0000000000e+00</v><v>7.2631944760e+00</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:49:00 CST / 1668016140 --> <row><v>1.9408336156e+02</v><v>3.5444462573e+01</v><v>0.0000000000e+00</v><v>2.4249088845e+00</v><v>0.0000000000e+00</v><v>5.0000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:50:00 CST / 1668016200 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:51:00 CST / 1668016260 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:52:00 CST / 1668016320 --> <row><v>1.7617544741e+03</v><v>1.6512036021e+03</v><v>0.0000000000e+00</v><v>1.9124650339e+01</v><v>0.0000000000e+00</v><v>2.5000000000e-01</v><v>0.0000000000e+00</v></row>
-			<!-- 2022-11-09 11:53:00 CST / 1668016380 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-11-09 11:54:00 CST / 1668016440 --> <row><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-11-09 09:40:00 CST / 1668008400 --> <row><v>8.9047746051e+00</v><v>1.5054054054e+01</v><v>0.0000000000e+00</v><v>7.3037903189e+00</v><v>0.0000000000e+00</v><v>8.9828158353e-02</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:41:00 CST / 1668008460 --> <row><v>2.0075388994e+01</v><v>2.9533333333e+01</v><v>0.0000000000e+00</v><v>5.3293293034e+00</v><v>0.0000000000e+00</v><v>2.1127263568e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:42:00 CST / 1668008520 --> <row><v>9.2602976882e+01</v><v>4.1933103945e+01</v><v>0.0000000000e+00</v><v>5.5283080558e+00</v><v>0.0000000000e+00</v><v>2.9921304923e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:43:00 CST / 1668008580 --> <row><v>3.4677038866e+02</v><v>1.4049202101e+02</v><v>0.0000000000e+00</v><v>6.0635724588e+00</v><v>0.0000000000e+00</v><v>7.6358759486e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:44:00 CST / 1668008640 --> <row><v>3.1866753855e+01</v><v>5.8885008908e+01</v><v>0.0000000000e+00</v><v>7.7747861520e+00</v><v>0.0000000000e+00</v><v>4.7053268924e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:45:00 CST / 1668008700 --> <row><v>1.7055137626e+01</v><v>2.2073845292e+01</v><v>0.0000000000e+00</v><v>5.0423432998e+00</v><v>0.0000000000e+00</v><v>2.5000000000e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:46:00 CST / 1668008760 --> <row><v>1.5155693238e+01</v><v>1.9795493354e+01</v><v>0.0000000000e+00</v><v>4.2846949853e+00</v><v>0.0000000000e+00</v><v>1.1162489092e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:47:00 CST / 1668008820 --> <row><v>2.8087823831e+03</v><v>6.9228719416e+02</v><v>0.0000000000e+00</v><v>9.9896283816e+00</v><v>0.0000000000e+00</v><v>2.9050417758e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:48:00 CST / 1668008880 --> <row><v>1.9678833405e+01</v><v>2.3909601091e+01</v><v>0.0000000000e+00</v><v>7.9528763094e+00</v><v>0.0000000000e+00</v><v>2.3301262735e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:49:00 CST / 1668008940 --> <row><v>2.1854499928e+01</v><v>2.0423732243e+01</v><v>0.0000000000e+00</v><v>7.4698945840e+00</v><v>0.0000000000e+00</v><v>2.1698737265e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:50:00 CST / 1668009000 --> <row><v>3.5410000000e+02</v><v>1.6495000000e+02</v><v>0.0000000000e+00</v><v>8.3938957733e+00</v><v>0.0000000000e+00</v><v>7.6666666667e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:51:00 CST / 1668009060 --> <row><v>2.6815287464e+01</v><v>3.2355198646e+01</v><v>0.0000000000e+00</v><v>3.9238230955e+00</v><v>0.0000000000e+00</v><v>2.4973846566e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:52:00 CST / 1668009120 --> <row><v>6.3614390486e+02</v><v>3.5442278467e+02</v><v>0.0000000000e+00</v><v>9.7595102379e+00</v><v>0.0000000000e+00</v><v>1.1669282010e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:53:00 CST / 1668009180 --> <row><v>3.4874141008e+01</v><v>5.1655350019e+01</v><v>0.0000000000e+00</v><v>8.3467938895e+00</v><v>0.0000000000e+00</v><v>3.5000000000e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:54:00 CST / 1668009240 --> <row><v>1.0562495934e+04</v><v>2.4847387851e+03</v><v>0.0000000000e+00</v><v>2.1053206110e+01</v><v>0.0000000000e+00</v><v>1.0500000000e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:55:00 CST / 1668009300 --> <row><v>7.7274163209e+01</v><v>1.1539963611e+02</v><v>0.0000000000e+00</v><v>7.8731036570e+00</v><v>0.0000000000e+00</v><v>8.2864266299e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:56:00 CST / 1668009360 --> <row><v>2.4576323660e+02</v><v>4.8786157875e+02</v><v>0.0000000000e+00</v><v>7.0435630097e+00</v><v>0.0000000000e+00</v><v>1.3046906703e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:57:00 CST / 1668009420 --> <row><v>3.5902908700e+02</v><v>3.2266689552e+02</v><v>0.0000000000e+00</v><v>9.5666666667e+00</v><v>0.0000000000e+00</v><v>1.7000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:58:00 CST / 1668009480 --> <row><v>3.1963757967e+02</v><v>1.9546643782e+02</v><v>0.0000000000e+00</v><v>8.6500000000e+00</v><v>0.0000000000e+00</v><v>8.3333333333e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 09:59:00 CST / 1668009540 --> <row><v>1.6229017978e+04</v><v>4.1229365056e+03</v><v>0.0000000000e+00</v><v>2.3633333333e+01</v><v>0.0000000000e+00</v><v>1.2666666667e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:00:00 CST / 1668009600 --> <row><v>1.2943492673e+03</v><v>3.9934232511e+02</v><v>0.0000000000e+00</v><v>1.0616666667e+01</v><v>0.0000000000e+00</v><v>2.0000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:01:00 CST / 1668009660 --> <row><v>1.3178304103e+03</v><v>9.1984958680e+02</v><v>0.0000000000e+00</v><v>1.1600000000e+01</v><v>0.0000000000e+00</v><v>4.3166666667e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:02:00 CST / 1668009720 --> <row><v>8.7000982734e+02</v><v>2.6399294513e+03</v><v>0.0000000000e+00</v><v>6.5149516211e+00</v><v>0.0000000000e+00</v><v>1.3529954966e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:03:00 CST / 1668009780 --> <row><v>4.3509183267e+01</v><v>6.3008797867e+01</v><v>0.0000000000e+00</v><v>7.7350483789e+00</v><v>0.0000000000e+00</v><v>6.4700450338e-01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-11-09 10:04:00 CST / 1668009840 --> <row><v>2.0817256322e+02</v><v>1.4097993569e+02</v><v>0.0000000000e+00</v><v>5.2515389191e+00</v><v>0.0000000000e+00</v><v>5.2037594684e-01</v><v>0.0000000000e+00</v></row>
 		</database>
 	</rra>
 </rrd>
