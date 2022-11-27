@@ -34,7 +34,7 @@ while 1:
 
     carga_RED = (int(consultaSNMP('comunidadSNMP','localhost',oid_red+oid_red1))+int(consultaSNMP('comunidadSNMP','localhost',oid_red+oid_red2))+int(consultaSNMP('comunidadSNMP','localhost',oid_red_s+oid_red1_s))+int(consultaSNMP('comunidadSNMP','localhost',oid_red_s+oid_red1)))/4
 
-    valor = "N:" + str(suma)+ str(carga_RAM)+str(carga_RED)
+    valor = "N:" + str(suma)+ ":" +str(carga_RAM)+":" +str(carga_RED)
     print (valor)
     rrdtool.update(rrdpath+'trend.rrd', valor)
    # rrdtool.dump(rrdpath+'trend.rrd','trend.xml')
