@@ -54,7 +54,30 @@ def generarGraficaRam(ultima_lectura):
                              "GPRINT:cargaSTDEV:%6.2lf %SSTDEV",
                              "GPRINT:cargaLAST:%6.2lf %SLAST")
         print(ret)
-
+def generarGraficaRed(ultima_lectura):
+    tiempo_final = int(ultima_lectura)
+    tiempo_inicial = tiempo_final - 1800
+    ret = rrdtool.graphv( imgpath+"deteccionRed.png",
+                     "--start",str(tiempo_inicial),
+                     "--end",str(tiempo_final),
+                     "--vertical-label=Trafico de red",
+                    '--lower-limit', '0',
+                    '--upper-limit', '100',
+                    "--title=Trafico de RED del agente Usando SNMP y RRDtools \n Detección de umbrales Edgar Garcia",
+                    "DEF:cargaRED="+rrdpath+"trend.rrd:REDload:AVERAGE",
+                     "VDEF:cargaMAX=cargaRED,MAXIMUM",
+                     "VDEF:cargaMIN=cargaRED,MINIMUM",
+                     "VDEF:cargaSTDEV=cargaRED,STDEV",
+                     "VDEF:cargaLAST=cargaRED,LAST",
+                     "CDEF:umbral50=cargaRED,50,LT,0,cargaRED,IF",
+                     "AREA:cargaRED#00FF00:Trafico de red",
+                     "AREA:umbral50#FF9F00:Trafico de RED mayor de 50",
+                     "HRULE:50#FF0000:Umbral  50%",
+                     "PRINT:cargaLAST:%6.2lf",
+                     "GPRINT:cargaMIN:%6.2lf %SMIN",
+                     "GPRINT:cargaSTDEV:%6.2lf %SSTDEV",
+                     "GPRINT:cargaLAST:%6.2lf %SLAST" )
+    print (ret)
 while (1):
     ultima_actualizacion = rrdtool.lastupdate(rrdpath + "trend.rrd")
     timestamp=ultima_actualizacion['date'].timestamp()
@@ -62,6 +85,7 @@ while (1):
     print(dato)
     generarGrafica(int(timestamp))
     generarGraficaRam(int(timestamp))
+    generarGraficaRed(int(timestamp))
     #if dato> 50:
      #   generarGrafica(int(timestamp))
       #  send_alert_attached("Sobrepasa el umbral Edgar Garcia Marciano")
