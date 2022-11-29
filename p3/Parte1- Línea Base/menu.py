@@ -1,31 +1,19 @@
 from getSNMP import *
 
-oid_ram ="1.3.6.1.4.1.2021.4.6.0"#free
+if __name__ == "__main__":
+    print(f'Sistema de Administraciòn de Red'.center(50, "-"))
+    print(f'Pràctica 3 -Monitoreo'.center(50, "-"))
+    print(f'Edgar Garcìa Marciano 2020630175'.center(50, "-"))
+    print("Selecciona una de las siguientes opciones: ")
+    print("1: Start")
+    print("2: Salir")
 
-#entrada de trafico de red
-oid_red= "1.3.6.1.2.1.2.2.1.16"
-oid_red1 =".1"
-oid_red2 =".2"
-#salida de trafico de red
-oid_red_s= "1.3.6.1.2.1.2.2.1.10"
-oid_red1_s =".1"
-oid_red2_s =".2"
+    opc = int(input("Ingresa la opciòn: "))
 
-oid_ram2 ="1.3.6.1.4.1.2021.4.5.0"#total
-
-
-ram = consultaSNMP("comunidadSNMP","localhost",oid_ram)
-ram2 = consultaSNMP("comunidadSNMP","localhost",oid_ram2)
-
-porcentaje = (int(ram)*100)/(int(ram2))
-
-a= (int(ram)/1000000)
-b= (int(ram2)/1000000)
-
-c = (b-a)
-por =(c*100/b)
-
-carga_RAM = (int(consultaSNMP("comunidadSNMP","localhost",oid_ram2))-int(consultaSNMP("comunidadSNMP","localhost",oid_ram)))*100/int(consultaSNMP("comunidadSNMP","localhost",oid_ram2))
-carga_RED = (int(consultaSNMP('comunidadSNMP','localhost',oid_red+oid_red1))+int(consultaSNMP('comunidadSNMP','localhost',oid_red+oid_red2))+int(consultaSNMP('comunidadSNMP','localhost',oid_red_s+oid_red1_s))+int(consultaSNMP('comunidadSNMP','localhost',oid_red_s+oid_red1)))/4
-print(por)
-print(f'{carga_RED}')
+    if opc == 1:
+        print("Iniciando el monitoreo de la RAM, CPU, RED del agente...")
+    elif opc == 2:
+        quit()
+    else:
+        print(f'La opciòn {opc} no es correcta, seleccione de nuevo.')
+        quit()
