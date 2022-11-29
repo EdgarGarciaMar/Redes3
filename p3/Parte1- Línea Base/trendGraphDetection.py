@@ -46,10 +46,10 @@ def graficar_todo():
                                  "VDEF:cargaMIN=cargaRAM,MINIMUM",
                                  "VDEF:cargaSTDEV=cargaRAM,STDEV",
                                  "VDEF:cargaLAST=cargaRAM,LAST",
-                                 "CDEF:umbral50=cargaRAM,50,LT,0,cargaRAM,IF",
+                                 "CDEF:umbral50=cargaRAM,85,LT,0,cargaRAM,IF",
                                  "AREA:cargaRAM#00FF00:Carga de la RAM",
                                  "AREA:umbral50#FF9F00:Carga RAM mayor de 50",
-                                 "HRULE:50#FF0000:Umbral  50%",
+                                 "HRULE:85#FF0000:Umbral  85%",
                                  "PRINT:cargaLAST:%6.2lf",
                                  "GPRINT:cargaMIN:%6.2lf %SMIN",
                                  "GPRINT:cargaSTDEV:%6.2lf %SSTDEV",
@@ -97,10 +97,12 @@ def graficar_todo():
         generarGrafica(int(timestamp))
         generarGraficaRam(int(timestamp))
         generarGraficaRed(int(timestamp))
-        #if dato> 50:
-         #   generarGrafica(int(timestamp))
-          #  send_alert_attached("Sobrepasa el umbral Edgar Garcia Marciano")
-           # print("sobrepasa el umbral")
+        if dato> 50 or dato2 > 85:
+           generarGrafica(int(timestamp))
+           generarGraficaRam(int(timestamp))
+           generarGraficaRed(int(timestamp))
+           send_alert_attached("Sobrepasa el umbral Edgar Garcia Marciano")
+           print("sobrepasa el umbral")
         time.sleep(20)
 
 #graficar_todo()
