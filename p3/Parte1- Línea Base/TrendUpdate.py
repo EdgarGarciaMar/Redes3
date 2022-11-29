@@ -32,8 +32,8 @@ def actualizar_todo(comunidad,localhost):
             consultaSNMP(comunidad, localhost, oid_ram))) * 100 / int(
             consultaSNMP(comunidad, localhost, oid_ram2))
 
-        carga_RED_1 = (int(consultaSNMP(comunidad,localhost,oid_red)) )/10000
-        carga_RED_2= int(consultaSNMP(comunidad,localhost,oid_red_s))/100000
+        carga_RED_1 = (int(consultaSNMP(comunidad,localhost,oid_red)) )/100000
+        carga_RED_2= int(consultaSNMP(comunidad,localhost,oid_red_s))/1000000
 
         valor = "N:" + str(suma)+ ":" +str(carga_RAM)+":" +str(carga_RED_1)+":" +str(carga_RED_2)
         print (valor)
