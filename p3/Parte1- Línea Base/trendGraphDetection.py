@@ -113,20 +113,21 @@ def graficar_todo():
            generarGrafica(int(timestamp))
            generarGraficaRam(int(timestamp))
            generarGraficaRed(int(timestamp))
-           send_alert_attached("Sobrepasa el umbral medio Edgar Garcia Marciano")
+           send_alert_attached("Sobrepasa el umbral medio Edgar Garcia Marciano, Linux ,nombre del dispositivo: edgar ubuntu")
            print("sobrepasa el umbral medio")
         if dato > 70 or dato2 > 85 or dato3 > 90:
             generarGrafica(int(timestamp))
             generarGraficaRam(int(timestamp))
             generarGraficaRed(int(timestamp))
-            send_alert_attached("Sobrepasa el umbral maximo Edgar Garcia Marciano")
+            send_alert_attached("Sobrepasa el umbral maximo Edgar Garcia Marciano, Linux ,nombre del dispositivo: edgar ubuntu")
             print("sobrepasa el umbral maximo")
         if dato> 10 or dato2 > 20 or dato3 >20:
            generarGrafica(int(timestamp))
            generarGraficaRam(int(timestamp))
            generarGraficaRed(int(timestamp))
-           send_alert_attached("Sobrepasa el umbral minimo Edgar Garcia Marciano")
+           send_alert_attached("Sobrepasa el umbral minimo Edgar Garcia Marciano,  Linux ,nombre del dispositivo: edgar ubuntu")
            print("sobrepasa el umbral minimo")
         time.sleep(20)
+        break
 
 #graficar_todo()

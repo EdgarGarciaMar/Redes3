@@ -9,7 +9,7 @@ imgpath = '/home/edgar/Documents/GitHub/Redes3/p3/IMG/'
 fname = 'trend.rrd'
 
 mailsender = "dummycuenta3@gmail.com"
-mailreceip = "edgargarcia.0129@gmail.com" #linea de codigo a modiciar para el correo
+mailreceip = "dummycuenta3@gmail.com" #linea de codigo a modiciar para el correo
 mailserver = 'smtp.gmail.com: 587'
 password = 'dvduuffmlhspbmjj'
 
