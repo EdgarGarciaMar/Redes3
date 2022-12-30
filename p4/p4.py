@@ -110,7 +110,7 @@ def menu_s():
         ftp = FTP(ipftp, usuario, psw)
         print("\n" + ftp.getwelcome())
 
-        origen = '/home/kimi/PycharmProjects/p4/startup-config'
+        origen = '/home/edgar/Documents/GitHub/Redes3/p4/startup-config'#'/home/kimi/PycharmProjects/p4/startup-config'
         ftpraiz = '/'
 
         f = open(origen, 'rb')
