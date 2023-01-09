@@ -1,7 +1,7 @@
 sudo tunctl -u edgar
-sudo ifconfig tap1 30.30.30.2/24 up
+sudo ifconfig tap0 30.30.30.2/24 up
 
 
-sudo route add -net 30.30.30.0 netmask 255.255.255.0 gw 30.30.30.1 dev tap1
-sudo route add -net 192.168.1.0 netmask 255.255.255.0 gw 30.30.30.1 dev tap1
+sudo route add -net 30.30.30.0 netmask 255.255.255.0 gw 30.30.30.1 dev tap0
+sudo route add -net 192.168.1.0 netmask 255.255.255.0 gw 30.30.30.1 dev tap0
 
