@@ -45,8 +45,8 @@ def menu_s():
             print('Archivo Startup creado :D')
             input('Pulse una tecla para continuar... ')
             menu_s()
-        elif ipe == "10.10.10.1":
-            ipe1 = "30.30.30.1"
+        elif ipe == "192.168.1.0":# 10.10.10.1
+            ipe1 = "192.168.1.1"#30.30.30.1
             tel = telnetlib.Telnet(ipe1)  # Se habilita el servicio telnet
             tel.read_until(b"User: ")
             tel.write(usuario.encode('ascii') + b"\n")
@@ -126,7 +126,7 @@ def menu_s():
         exit()
     else:
         print('Elija una opciòn correcta')
-        input('Pulse alguna tecla para continuar...')
+        input('Pulse 1 y enter para continuar...')
         os.system("clear")
         menu_s()
     os.system("clear")
