@@ -1,4 +1,4 @@
-hostname RCPlive-1
+hostname RCP11-Prueba
 !
 service telnet
 service http encrypted password DEWISPLO$fd10c6209511f57ab4e7c825c3810368
