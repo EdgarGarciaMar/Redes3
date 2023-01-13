@@ -1,0 +1,31 @@
+edgar@edgar-Ubuntu:~$ sudo tunctl -u edgar
+[sudo] password for edgar: 
+Set 'tap0' persistent and owned by uid 1000
+edgar@edgar-Ubuntu:~$ sudo ifconfig tap0 192.168.1.2/24 up
+edgar@edgar-Ubuntu:~$ sudo route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1 dev tap0
+
+
+
+editar archivos de las traps linkdown-linkup----
+cd /etc/snmp
+sudo nano snmptrapd.conf
+editar correo y contraseña-----------
+cd /bin
+sudo nano traptoemail
+
+
+imprimir en terminal las traps en lugar de el sys---
+
+sudo service snmptrapd stop
+sudo systemctl stop snmptrapd.socket
+sudo snmptrapd -f -Lo -c /etc/snmp/snmptrapd.conf
+
+
+linkup consulta----
+snmptrap -v1 -c comunidadTRAPS localhost TRAP-TEST-MIB::demotraps "" 3 17 "" 1.3.6.1.2.1.1.1.0 s "demotrap"
+linkdown consulta-------
+snmptrap -v1 -c comunidadTRAPS localhost TRAP-TEST-MIB::demotraps "" 2 17 "" 1.3.6.1.2.1.1.1.0 s "demotrap"
+
+archivos de la mib traps----
+cd /usr/share/snmp/mibs
+TRAP-TEST-MIB.txt
